@@ -1,0 +1,115 @@
+body {
+    background: #FFFFFF;
+    font-family: Verdana, Arial, sans-serif;
+    color: #000000;
+    font-size: 14pt;
+}
+a {
+    text-decoration: underline;
+    color: #0000FF;
+}
+#contentDiv a:link:after, #contentDiv a:visited:after {
+    content: " (" attr(href) ") ";
+    font-size: 90%;
+}
+#contentDiv a[href^="/"]:after {
+    content: " (http://www.esri.com" attr(href) ") ";
+}
+.printReference {
+    font-size: 8pt;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.grid_4{
+	display:block !important;
+}
+/* Elements to HIDE in print format */
+#globalHeader, #globalFooterNav, #utilityNav, #navbar, #menu, #menuWrapper, #leftBar, .footerSmall, .sidenav, #download, #sidenav, .nav_2, .navarea .navlogos #esrilogo {
+    background: none;
+    display: none;
+}
+/* Elements to SHOW in print format */
+#globalHeaderPrint {
+    display: block;
+}
+#globalFooter, #headerbg {
+    background: none !important;
+}
+#globalFooterPrint {
+    display: block;
+    text-align: center;
+    border-top: 1px solid black;
+    font-weight: bold;
+}
+#homelink {
+    margin: 0;
+}
+#header {
+    height: 75px !important;
+    margin: 0 !important;
+}
+#contentDiv2 {
+    width: 960px !important;
+    position: relative;
+    margin: 0;
+}
+#contentWrapper, div.contentwrapper {
+    width: 590px !important;
+    margin-left: 0 !important;
+}
+#topperText {
+    padding: 0 !important;
+    margin: 0 0 0 10px !important;
+}
+#bodyColumns {
+    background-image: none !important;
+    font-size: 14pt !important;
+}
+#bodyContent, #bodyContent p, .bodyContent, .bodyContent p {
+    font-size: 14pt !important;
+    line-height: 1.2em !important;
+    margin-top: 0;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+#bodyContent ul, .bodyContent ul {
+    margin: 0 !important;
+    font-size: 12pt;
+}
+.imgFrame, .frame {
+    font-size: 12pt;
+    padding: 10px !important;
+}
+#rightBar {
+    margin-left: 10px !important;
+    width: 225px !important;
+}
+#rightBar p {
+    font-size: 12pt !important;
+    line-height: 1.2em !important;
+}
+td.content {
+    width: 700px;
+}
+.navarea .navlogos #eventlogo {
+    text-align:left;
+    float:left;
+}
+.rssfeed, .email {
+    padding-right:0;
+}
+h1, h2, h1 a, h2 a {
+    font-family:Verdana, Geneva, sans-serif !important;
+}
+.shadowText h1, .shadowText h2, #navMain, #topperText h1, #topperText h2, #eventTopperText h2, #eventTopperText h1, .shadowThis {
+    font-family:Verdana, Geneva, sans-serif !important;
+    text-shadow:none !important;
+    zoom:1;
+    filter:none;
+}
+#topperText h3, #eventTopperText h3, .shadowText h3, .shadowThisSub {
+    font-family:Verdana, Geneva, sans-serif !important;
+    text-shadow:none !important;
+    zoom:1;
+    filter:none;
+}

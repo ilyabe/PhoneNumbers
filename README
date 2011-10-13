@@ -1,0 +1,3 @@
+Run the below command in terminal to find phone numbers. Should be tweaked further to ignore images with names similar to phone numbers.
+
+grep -o '\(([0-9]\{3\})\|[0-9]\{3\}\)[ -]\?[0-9]\{3\}[ -]\?[0-9]\{4\}' *.html

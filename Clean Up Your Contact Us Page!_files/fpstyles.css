@@ -1,0 +1,945 @@
+#resultframe {
+        width:1004px;
+        margin:0; padding:0;
+        background:#FFFFFF;
+        margin-top:15px;
+}
+
+#resultleft {
+        float:left;
+        width:156px;
+        background-color:#FFFFFF;
+        margin:0;
+        padding-left: 0;
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 10px;
+        text-align: left;
+}
+
+#resultcontent {
+        float:left;
+        width:775px;
+        margin:0; padding:0;
+        text-align: left;
+        background:#FFFFFF;
+        padding-left:15px;
+}
+
+#resultright {
+        float:right;
+        width:170px;
+        margin:0; padding:0;
+        text-align: left;
+        background:#FFFFFF;
+}
+
+
+#clear {
+	clear: both;
+}
+.whitebg{
+        padding-bottom: 25px;
+}
+.txt {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #990000;
+	text-decoration: none;
+}
+.txt.li{
+list-style-image:none;
+list-style-position:inside;
+list-style-type:disc;
+text-indent:5px;
+}
+.txt2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+.txtplain {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: #000000;
+        text-decoration: underline;
+        line-height: 14px;
+        list-style-type: none;
+    list-style: none;
+}
+.txtplain1 {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #000000;
+}
+.intel {
+        padding-right: 7px;
+        padding-right: 8px;
+}
+.title, A.title:link, A.title:visited, A.title:active {
+	font-family: "Trebuchet MS", "Impact", Helvetica,Arial, Verdana, sans-serif  ;
+	font-size: 40px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+.trademark, A.trademark:link, A.trademark:visited, A.trademark:active {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.smalltitle, A.smalltitle:link, A.smalltitle:visited, A.smalltitle:active {
+	font-family: "Trebuchet MS", "Impact", Helvetica,Arial, Verdana, sans-serif  ;
+	font-size: 40px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.txtwhite {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+
+
+}
+.txtunderline {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	text-decoration: underline;
+}
+
+.nettxt {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 7px;
+	color: #333333;
+	text-decoration: none;
+
+}
+
+A.network:link, A.network:visited, A.network:active { 
+  font-family: Verdana,Arial,Helvetica; 
+  font-size: 9px; 
+  color: #000000; 
+  text-decoration: none;
+}
+
+A.network:hover { 
+  color:#000000; 
+  text-decoration: underline;
+}
+
+  TD.sidenav { 
+  font-family: Verdana,Arial,Helvetica; 
+  font-size: 11px; 
+  color: #000000; 
+  text-decoration: none;
+}
+
+  A.sidenav:link, A.sidenav:visited, A.sidenav:active{ 
+  font-family: Verdana,Arial,Helvetica; 
+  font-size: 11px; 
+  color: #000000; 
+  text-decoration: none;
+}
+
+A.sidenav:hover { 
+  color:#000000; 
+  text-decoration: underline;
+}
+
+A.sidenav2:link, A.sidenav2:visited, A.sidenav2:active { 
+  font-family: Verdana,Arial,Helvetica; 
+  font-size: 10px; 
+  color: #000000; 
+  text-decoration: none;
+}
+
+A.network2:hover { 
+  color:#000000; 
+  text-decoration: underline;
+}
+  
+.textAd {
+	font-size: 12px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.txtblack {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #000000;
+	line-height: 10px;
+}
+
+.form {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #333333;
+	text-decoration: none;
+}
+
+
+.titblack {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.linksblack {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: underline;
+}
+
+.txtgray {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+}
+
+A.linkscolor:link, A.linkscolor:visited, A.linkscolor:active {
+  font-family: Verdana,Arial,Helvetica;
+  font-size: 11px;
+  color: #666666;
+  text-decoration: none;
+}
+
+A.linkscolor:hover {
+  color:#FF6600;
+  text-decoration: none;
+}  
+
+.title_readon {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+}
+A.title_readon:hover {
+  color:blue;
+  text-decoration: underline;
+}  
+.dunno {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: underline;
+}
+
+.contentpaneopen {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	text-decoration: none;
+}
+
+.language {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+cursor:pointer;
+cursor:hand;
+text-decoration: underline;
+color:#FFFFFF;
+}
+
+.language2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	cursor:pointer;
+	cursor:hand;
+	text-decoration: underline;
+	color:#FFFFFF;
+}
+
+.tightline  {
+  line-height: .5
+}
+
+.top {
+  cursor:pointer; 
+  cursor:hand;
+  text-decoration: underline; 
+  color:#000000;
+  font-family: Verdana,Arial,Helvetica; 
+  font-size: 11px; 
+}
+
+a.top:hover { 
+  color:#000000; 
+  text-decoration: underline;
+}
+
+.pill, a.pill:link, a.pill:visited, a.pill:active, a.pill:hover {
+	background-color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0;
+	color: #FFFFFF;	
+}
+
+.boxAds, a.boxAds:link, a.boxAds:visited, a.boxAds:active, a.boxAds:hover{
+	background-color: #000066;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 8pt;
+	color: #FFFFCC;
+       text-decoration: underline;
+}
+
+.pathwaybg {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.pagenavbar {
+        text-align: right;
+        width: 100%;
+        background-color: #FFFFFF;
+        padding: 0;
+        margin:0;
+        clear: both;
+}
+.forumlinks {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	text-decoration: none;
+}
+A.forumlinks:link, A.forumlinks:visited{ 
+  font-family: Verdana,Arial,Helvetica; 
+  font-size: 11px; 
+  color: #000000; 
+  text-decoration: none;
+}
+A.forumlinks:hover { 
+  color:#000000; 
+  text-decoration: underline;
+}
+
+A.toclink:link, A.toclink:visited{ 
+  font-family: Verdana,Arial,Helvetica; 
+  font-size: 11px; 
+  color: #000000; 
+  text-decoration: none;
+}
+
+A.toclink:hover { 
+  color:#000000; 
+  text-decoration: underline;
+}
+.buttons {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #000000;
+        text-decoration: underline;
+}   
+
+ .newpill {
+text-decoration: none; color:#c0c0c0;
+font-family: Verdana,Arial,Helvetica; 
+font-size: 9px;
+}
+
+.spacer 
+{
+line-height : 10px;
+}
+
+sitemaph1 {
+   font-weight: bold;
+   font-family: Arial,Helvetica,sans-serif;
+   color: #666666;
+   font-size: 22px;
+   margin: 0;
+}
+
+.contentpagetitle {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+h1 {
+   font-weight: bold;
+   color: #000000;
+   font-size: 28px;
+   display:inline;
+   padding: 0px;
+   margin: 0px;
+}
+
+h2{
+   color: #000000;
+   font-size: 26px;
+   padding: 0px;
+   margin: 0px;
+}
+
+PRE {
+
+   font-family: courier new, courier, mono;
+   font-size: 12px;
+}
+
+TT {
+
+   font-family: courier new, courier, mono;
+   font-size: 12px;
+
+}
+.colorbar {
+	background-color: #CC3300;
+}
+
+.bot2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	color: #0066CC;
+	text-decoration: underline;
+	line-height: 16px;
+
+}
+.button {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #000000;
+        text-decoration: none;
+} 
+
+.txtblack2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #000000;
+	line-height: 12px;
+}
+
+.bot {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #0066CC;
+	text-decoration: underline;
+	line-height: 16px;
+
+}
+
+.bluetext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #0066CC;
+	text-decoration: none;
+
+}
+
+.smallblack {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 7pt;
+	color: #000000;
+	#line-height: 7px;
+}
+
+.bot3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	color: blue;
+	text-decoration: underline;
+	line-height: 16px;
+
+}
+.overlink {
+  	 cursor:pointer; 
+  	 cursor:hand;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #FFFFFF;
+        text-decoration: underline;
+}
+.shrink_td {
+	font-size: 11px;
+}
+
+.art_title, A.art_title:link, A.art_title:visited, A.art_title:active {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	cursor:pointer;
+	cursor:hand;
+	font-size: 18px;
+	font-weight: bolder;
+	color: #000000;
+}
+.topbg {
+  font-family: Verdana,Arial,Helvetica;
+  font-size: 11px;
+  color: #000000;
+  text-decoration: none;
+ }
+
+.MsoNormal {
+	font-family: "Verdana";
+	font-size: 8.5pt;
+	color: black;
+}
+
+.AuthorNote {
+	width: 100%
+	margin: 0in;
+	margin-bottom: .0001pt;
+	background: antiquewhite;
+	font-size: 8.5pt;
+	font-family: Verdana;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	font-size: 8.5pt;
+	font-family: "Verdana"
+	text-align: justify;
+}
+
+.CodeSample {
+	margin: 0in;
+	margin-bottom: .0001pt;
+	background: cornsilk;
+	font-size: 9.0pt;
+	font-family: "Courier New";
+	color: blue;
+}
+
+.Syntax {
+	margin: 0in;
+	margin-bottom: .0001pt;
+	background: antiquewhite;
+	font-size: 9.0pt;
+	font-family: "Verdana";
+}
+
+.TextSample {
+	margin: 0in;
+	margin-bottom: .0001pt;
+	background: #D9D9D9;
+	font-size: 8.5pt;
+	font-family: "Courier New";
+}
+.bckg {
+	background-image: url(http://images.devshed.com/common/bckg.jpg);
+	background-repeat: repeat;
+}
+.sidenavgray {
+	background-image: url(http://images.devshed.com/common/bckgsidenavgray.gif);
+	height: 20px;
+	width: 149px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	text-decoration: none;
+	text-indent: 8px;
+}
+.sidenavtxtgray {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	text-indent: 8px;
+	color: #333333;
+}
+.sidenavgray2 {
+	background-image: url(http://images.devshed.com/common/bckgsidenav.gif);
+	height: 16px;
+	width: 149px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	text-decoration: none;
+	text-indent: 8px;
+}
+.bckgbanner {
+	background-image: url(http://images.devshed.com/common/bckg-topbanner.gif);
+	height: 115px;
+	background-repeat: repeat;
+}
+.border {
+	border: 1px dotted #CCCCCC;
+}
+.login {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #666666;
+}
+.menu {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	top: 8px;
+	bottom: 8px;
+	background-color: #FFFFFF;
+	background-position: 24px;
+	text-decoration: none;
+}
+.menu-on {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FF6600;
+}
+
+
+.titblack {
+	font-size: 15px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+        line-height: 18px;
+}
+.txtblack {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	text-decoration: none;
+}
+.subtitblack {
+	font-size: 11px;
+	color: #333333;
+	text-decoration: none;
+}
+.titbox {
+	font-size: 16px;
+	color: #333333;
+	text-decoration: none;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.txtbox {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	text-decoration: none;
+	line-height: 16px;
+}
+.toptxt {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+}
+a:hover  {
+	color:#000000;
+	text-decoration: underline;
+}
+.footergray {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666666;
+	text-decoration: none;
+}
+.footerblack {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	text-decoration: none;
+}
+.ad {
+    color:#003366;
+    display:block;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:9px;
+    margin-bottom:0px;
+    margin-top:0px;
+    padding-top:0px;
+    text-decoration:none;
+}
+.abblue {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #003366;
+    text-decoration: none;
+}
+.bckgtit {
+	background-image: url(http://images.devshed.com/common/bckgtit.gif);
+	height: 27px;
+	width: 662px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+}
+.linegray {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: #333333;
+        background-color: #E5E5E5;
+        height: 20px;
+}
+.linegray2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: #333333;
+        background-color: #F5F5F5;
+        height: 20px;
+}
+.morearticles {
+        font-size: 14px;
+        font-style: italic;
+        font-weight: bold;
+        color: #0066FF;
+        line-height: 24px;
+}
+.totalarticles a.totalarticles:link, a.totalarticles:visited, a.totalarticles:active{
+        font-size: 11px;
+        color: #666666;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 18px;
+        text-decoration: underline;
+        text-align: right;
+}
+.pagenumber {
+        font-size: 15px;
+        font-style: italic;
+        font-weight: bold;
+        color: #000000;
+        text-decoration: none;
+}
+.pagenumber-small {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: #0066CC;
+        font-weight: bold;
+}
+.sidenavbckgwhite {
+	background-image: url(http://images.devshed.com/sc/seochat-bckgsidenavwhite.gif);
+	height: 20px;
+	width: 155px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	text-decoration: none;
+	text-indent: 8px;
+}
+.site-sidenavbckg {
+        background-image: url(http://images.devshed.com/sc/seochat-bckgsidenav.gif);
+        height: 20px;
+        width: 155px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: #333333;
+        text-decoration: none;
+        text-indent: 8px;
+}
+.site-bckgtit {
+        background-image: url(http://images.devshed.com/sc/seochat-bckgtit.gif);
+        height: 28px;
+        width: 326px;
+        text-indent: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: #000000;
+        text-decoration: none;
+        font-weight: normal;
+}
+.bckgtit2 {
+        background-image: url(http://images.devshed.com/common/bckgtit2.gif);
+        height: 27px;
+        width: 662px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: #000000;
+        text-decoration: none;
+}
+.site-bckgtit2 {
+        background-image: url(http://images.devshed.com/sc/seochat-bckgtit2.gif);
+        height: 28px;
+        width: 316px;
+        text-indent: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: #000000;
+        text-decoration: none;
+        font-weight: normal;
+}
+
+.site-index {
+        font-weight: normal;
+        color: #990000;
+        text-decoration: none;
+        font-size: 12px;
+}
+
+.bckgtit2 {
+        background-image: url(http://images.devshed.com/common/bckgtit2.gif);
+        height: 27px;
+        width: 662px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: #000000;
+        text-decoration: none;
+}
+.site-tit1 {
+        font-size: 18px;
+        font-weight: bold;
+        color: #990000;
+        text-decoration: none;
+}
+.site-tit2 {
+        font-size: 14px;
+        font-weight: bold;
+        color: #990000;
+        text-decoration: none;
+}
+.site-slogan {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #a01111;
+	font-size: 12px;
+}
+
+.site-sidenavbckg2 {
+	background-image: url(http://images.devshed.com/sc/seochat-bckgsidenav2.gif);
+	height: 20px;
+	width: 155px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	text-decoration: none;
+	text-indent: 8px;
+}
+.slogan {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-size: 12px;
+	line-height: 12px;
+	text-indent: 2px;
+}
+
+.pagename {
+	font-family: MetroDF, Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.whitepapers {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 13px;
+	color: #0066CC;
+	text-decoration: underline;
+}
+.article_toc{
+        font-size: 11px;
+        color: #000000;
+}
+.cat_titblack {
+    color:#333333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:11px;
+    font-weight:normal;
+    text-decoration:none;
+}
+.comments_block {
+    padding-top:10px;
+    padding-bottom:0px;
+    padding-right:7px;
+    padding-left:7px;
+}       
+.comments_link  {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #0000FF;
+        line-height: 20px;  
+}       
+.comments_link a.comments_link:link, a.comments_link:visited, a.comments_link:active{
+        text-decoration:underline;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #0000FF;
+}       
+.moreart_block{
+        background-image:url(http://images.devshed.com/cw/codewalkers-bckgtit.gif);
+        color:#000000;
+        font-family:Arial,Helvetica,sans-serif;
+        font-size:11px;
+        font-weight:normal;
+        height:28px;
+        text-decoration:none;
+        text-indent:8px;
+        width:308px;
+}       
+.art_titblack {
+    color:#333333;
+    font-size:14px;
+    font-weight:bold;
+    text-decoration:none;
+}       
+.bignav {
+        color:#000000;
+        font-family:Arial,Helvetica,sans-serif;
+        font-size:12px;
+        font-weight:normal;
+}
+.moreart_span {
+        font-family:Arial,Helvetica,sans-serif;
+        font-size:11px; 
+        text-align: right;
+    color: #666666; 
+    text-decoration: none;
+}
+#related-content {
+        display:block; float:right;WIDTH: 200px; overflow:hidden;FONT-FAMILY: verdana,arial,sans-serif; POSITION: relative; HEIGHT: 500px; _HEIGHT:520px; margin-left:5px;text-align:left;
+}
+#related-content-header {
+        Z-INDEX: 5; BACKGROUND-IMAGE: url(http://images.devshed.com/cmn/developer_head.png); WIDTH: 200px; _WIDTH:200;POSITION: absolute; HEIGHT: 30px;background-repeat:no-repeat;
+}
+#related-content-header H4 {
+        PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; Z-INDEX: 5; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 200px; _WIDTH: 200px;COLOR: #000; LINE-HEIGHT: 28px; PADDING-TOP: 0px; FONT-FAMILY:arial,sans-serif; POSITION: absolute; HEIGHT: 30px; TEXT-ALIGN: center; font-size:16px; font-weight:bold;
+}
+#related-content-body {
+        CLEAR: both; WIDTH: 191px; _WIDTH: 200px;FONT-FAMILY: verdana,arial,sans-serif; POSITION: relative; TOP: 30px; padding-left:5px;border:2px solid #3399cc; text-align:left;padding-bottom:5px;
+}
+.related-content-date{
+        font-size: .78em;color:#000000;text-align:left; display:block; _width:auto;
+}
+#related-content-body DIV OL {
+        PADDING: 0px; LIST-STYLE: none none outside;  MARGIN: 0px; COLOR: #c4c4c4;
+}
+#related-content-body DIV OL LI {
+         MARGIN: 0px; OVERFLOW: hidden; PADDING: 0px; POSITION: relative;  height:55px; _height:55px;display:block;
+}
+#related-content-body DIV OL LI DIV {
+    width:145px; _width:150px;padding:0px; margin:0px;height:55px;_height:55px;line-height:13px;
+}
+#related-content-body DIV OL LI DIV A {
+        vertical-align:top;PADDING-RIGHT: 4px; DISPLAY: inline; position:absolute;MARGIN-LEFT: 40px; FONT-WEIGHT: bold; FONT-SIZE: 11px; PADDING-BOTTOM: 0px; line-height:13px;COLOR: #003366; TEXT-DECORATION: none; FONT-FAMILY:arial,sans-serif;padding-top:5px;_width:150px;width:145px;height:55px; _height:60px;_MARGIN-LEFT:15px;display:block;OVERFLOW: hidden;
+}
+#related-content-body DIV OL LI DIV SPAN {
+        margin:0px;padding:0px;height:30px;width:30px;_height:_25px;_width:25px;
+}
+#related-content-body DIV OL LI DIV SPAN A{
+        margin:0px;padding:0px;width:30px; _width:30px;display:block;
+}
+#related-content-body DIV OL LI DIV SPAN A IMG {
+margin:0px;padding:0px; margin-top: 6px; position:absolute;display:inline;MARGIN-LEFT: 5px; VERTICAL-ALIGN: middle; MARGIN-RIGHT: 4px; height:25px; _height:25px;
+}
+code {
+    display:block;
+    margin:20px;
+    padding:20px;
+    width:650px;
+    word-wrap:break-word;
+    border: #666 solid 2px;
+    color: #333;
+}

@@ -1,0 +1,87 @@
+*,
+.eventfont,
+.psf,
+.V10W,
+.V10WB {
+	color: #000 !important;
+}
+#page_header,
+#page_userinfo,
+#page_acclinks,
+#navcontainer,
+.tabs,
+.extras,
+.cal_filter,
+.search_filters,
+.sb,
+td input,
+#inset_cal,
+#jumper,
+.section-actions {
+	display: none;
+}
+
+#page_wrapper,
+#page_layout,
+.contentcol,
+.module_icecold,
+.content {
+	width: 100% !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+body,
+.contentcol,
+.titlebarbg,
+.titlebar,
+.mshadow  {
+	background: #fff none !important;
+}
+.mshadow {
+	position:static !important;
+	margin: 0 !important; padding: 0 !important;
+}
+.content {
+	position:static !important;
+}
+#page_wrapper {
+	margin: 0 auto !important;
+}
+.content {
+	border: none !important;
+}
+.mshadow {
+	position: static !important;
+}
+.cal-lyt,
+table.layout td.contentcol {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: none;
+}
+div.module_icecold div.titlebarbg {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+div.module_icecold div.titlebar h1 {
+	float: none;
+	margin: 1.2em 0;
+	padding: 0;
+}
+#cal_print table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+.monthback,
+.monthreg,
+.calborder { 
+	border: .25pt solid #000 !important;
+}
+#cal_print .navback {
+	padding-top: .25em;
+	padding-bottom: .25em;
+}
+.monthlist,
+.monthback{
+	width: 100%;
+}

@@ -1,0 +1,11 @@
+document.write ('<!-- PubMatic ad tag (Javascript) : BostonHerald_300x250_ATF | http://www.bostonherald.com/ | 300 x 250 Sidekick -->\n');
+document.write ('<script type="text/javascript">\n');
+document.write ('var pubId=27330;\n');
+document.write ('var siteId=27331;\n');
+document.write ('var kadId=22454;\n');
+document.write ('var kadwidth=300;\n');
+document.write ('var kadheight=250;\n');
+document.write ('var kadtype=1;\n');
+document.write ('</script>\n');
+document.write ('<script type="text/javascript" src="http://ads.pubmatic.com/AdServer/js/showad.js">\n');
+document.write (' </script>\n');

@@ -1,0 +1,38 @@
+#main h3 { font-size: 13px; color: #333; font-weight: bold; word-spacing: -0.1em; }
+#main .sidebar { font-size: 11px; color: #666; padding-top: 50px; }
+#main .sidebar p,
+#main .sidebar ul,
+#main .sidebar h4 { font-size: 11px; line-height: 14px; }
+
+/* BOXES */
+
+#main .box { background: #fff url(http://images.apple.com/contact/images/box200.png) no-repeat center bottom; padding: 4px 8px 4px 8px; margin-bottom: 10px; }
+#main .box .corporatetop { position: relative; background: #fff url(http://images.apple.com/contact/images/corporate_boxtop200.png) no-repeat center top; margin: -4px -8px 8px -8px; }
+#main .box .frequentlytop { position: relative; background: #fff url(http://images.apple.com/contact/images/frequently_boxtop200.png) no-repeat center top; margin: -4px -8px 8px -8px; }
+#main .box .feedbacktop { position: relative; background: #fff url(http://images.apple.com/contact/images/feedback_boxtop200.png) no-repeat center top; margin: -4px -8px 8px -8px; }
+#main .box .itunesstoresupporttop { position: relative; background: #fff url(http://images.apple.com/contact/images/itunesstoresupport_boxtop200.png) no-repeat center top; margin: -4px -8px 8px -8px; }
+#main .box .productfeedbacktop { position: relative; background: #fff url(http://images.apple.com/contact/images/productfeedback_boxtop200.png) no-repeat center top; margin: -4px -8px 8px -8px; }
+#main .box .top p { margin-top: 5px; margin-left: 47px; }
+#main .box p, #main .nobox p { font-size: 10px; line-height: 15px; margin-bottom: 8px; }
+#main .box h4 { text-indent: -9999px; height: 25px; overflow: hidden; position: relative; margin-bottom: 0; }
+#main .box strong { color: #666; }
+#main .padder { padding: 0 8px; }
+#main ul li { padding-top: 10px; margin-left: -12px; }
+#main ul.none li.notop {margin-top: -9px; }
+#main ul.square { font-size: 10px; line-height: 14px;}
+#main ul.square li { margin-left: 10px; }
+#main ul.square li.notop {margin-top: -20px; }
+
+#content { float: left; width: 740px; }
+#content.faq { width: 940px; }
+#content.faq grid2col .column.last { float: right; }
+#content.faq h3 { margin-bottom: 3px; }
+
+.sidebar h3 { font-weight: bold; font-size: 11px; margin-top: 9px; }
+.sidebar { float: right; width: 200px; margin-top: 19px; background: #fff; }
+.sidebar ul { margin: 0 8px 10px 12px; }
+.sidebar a:link, .sidebar a:visited { text-decoration: none; }
+.sidebar a:hover, .sidebar a:active { text-decoration: underline; }
+.sidebar .padder a.frequently {padding-top: 10px; }
+
+

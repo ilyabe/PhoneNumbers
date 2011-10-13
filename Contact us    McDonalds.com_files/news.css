@@ -1,0 +1,216 @@
+#newsBox
+    {
+        margin:0; 
+        width:500px; 
+    }     
+
+#newsBox #newsTopCurve{background:url(../images/contact_us-boxtopcurve.gif) left top no-repeat; width:498px; height:9px; font-size:1%; margin:0; padding:0 }
+#newsBox #newsBoxArea{border-left:1px solid #e6e6e6; border-right:1px solid #e6e6e6; width:496px; padding:0; margin:-5px 0; background:#fff; clear:both; height:auto !important; height:400px; float:left}
+#newsBox #newsBottomCurve{background:url(../images/contact_us-boxbotmcurve.gif) left top no-repeat; width:498px; height:9px; font-size:1%; float:left }
+#newsBox #newsBoxArea .call{border-bottom:1px solid #e1e1e1; height:60px;}
+#newsBox #newsBoxArea .call h3{font-size:15px; font-weight:bold; color:#fbb316; padding:15px 0 0 15px; margin:0}
+#newsBox #newsBoxArea .call p{font-size:13px; font-weight:normal; color:#666; padding:5px 15px; margin:0}
+/*Css for Bottom Page Navigation for News Page*/
+#newsBox #newsBoxArea .bottomNavs{margin:0; padding:7px 0 11px 0; float:left; height:30px; width:496px}
+#newsBox #newsBoxArea ul{margin:0px 10px 5px 0; padding:0;}
+#newsBox #newsBoxArea ul li {float:left; list-style:none; margin:0; padding:0 0px 0 0px; height:22px;}
+#newsBox #newsBoxArea ul li a {float:left; display:block; height:21px; overflow:hidden; text-indent:-999px;}
+#newsBox #newsBoxArea  li.smallTxt a {background: url(../images/text-small-increase-button.png) left top; width:20px;}
+#newsBox #newsBoxArea  li.bigTxt a {background: url(../images/text-big-increase-buton.png) left top; width:19px;}
+#newsBox #newsBoxArea li a:hover,
+#newsBox #newsBoxArea li:hover a,
+#newsBox #newsBoxArea li.hover a {background-position:0 -22px;}
+#newsBox #newsBoxArea .pagenav{width:200px; margin:0 0 0 200px; padding:0; position:absolute;}
+#newsBox #newsBoxArea .textSizes{margin:8px 0px 0 0; float:right;}
+#newsBox #newsBoxArea .pagenav  li.pagetext{font-size:12px; font-weight:bold; color:#999999; padding:8px 10px 0 6px; margin:0;}
+#newsBox #newsBoxArea .pagenav  li.preBtn a {background: url(../images/news_archive-previous-btn.gif) left top; width:33px; height:31px; margin:0 5px 0 0;}
+#newsBox #newsBoxArea .pagenav li.nextBtn a {background: url(../images/news_archive-next-btn.gif) left top; width:33px; height:31px;}
+#newsBox #newsBoxArea .pagenav li a:hover,
+#newsBox #newsBoxArea .pagenav li:hover a,
+#newsBox #newsBoxArea .pagenav li.hover a {
+    background-position:0 -32px;
+}
+  
+
+dl.news {margin:0px 0px 0px 0px; padding:0; text-align:justify; border-top: 0px solid #E2E2E2; border-right: 0px solid #E2E2E2;     border-bottom: 0px solid #E2E2E2; border-left: 0px solid #E2E2E2;}
+dl.news dt {color:#DC291E; font:Arial, Helvetica, sans-serif; font-size:15px; font-weight:bold; margin:0; padding:7px 13px 1px 13px;line-height:18px;}
+dl.news dt a{color:#DC291E; font:Arial, Helvetica, sans-serif; font-size:15px; font-weight:bold;text-decoration:none;}
+dl.news dt a:hover{text-decoration:underline}
+dl.news dd {margin:0px 0px 2px 0px; background:url(../images/bg-news.gif) repeat-x bottom;  padding:0;  min-height:66px; height:auto !important; height:66px; color:#666; bo rder:1px solid red;}
+dl.news dd.last {background:none;}
+dl.news strong {line-height:120%; display:block; margin:0px 0px 0px 0px; font-size:12px; color:#444444; padding-left:12px; padding-top:3px;}
+dl.news dd p {font-size:13px; font-weight:normal; margin:0; padding:8px 0 0 13px; width:460px; height:auto !important;color:#666666;}
+dl.news dd span{font-size:12px; font-weight:normal; color:#444; margin:0 0 0 13px}
+dl.news dd a {color:#51b1c5;}
+dl.news dd a:hover {text-decoration:underline;}
+dl.news dd a.moreCareer {color:#51b1c5; font-weight:bold; background:url(../images/green-arrow.gif) right 7px no-repeat; width:13px; height:5px; padding:0 15px 0 0;text-decoration:none;}
+dl.news dd a.moreCareer:hover {text-decoration:underline;}
+dl.news dd p span{margin:0; padding:0; font-weight:bold}
+
+
+
+.basicModal {
+    height:581px;
+    width:705px;
+    margin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+    top:10px;
+    position:absolute;
+    z-index:200;
+    display:none;
+    }    
+.basicModal .basictopCurve{background:url(../images/news_basic-topcurve.png) left top no-repeat; width:703px; height:90px; font-size:1%; margin:0 auto}
+.basicModal .basictopCurve h2{color:#fbb316; font-size:24px; line-height:27px; margin:0; padding:5px 0 0 30px; b order:1px solid red}
+.basicModal .basictopCurve h2 span.closeButton{ margin-left:0px;}
+.basicModal .basictopCurve h2 span.closeButton a{position:relative; background:url(../images/close-buttons.gif) left top no-repeat; width:34px; height:32px; overflow:hidden; text-indent:-999px; display:block; float:right;margin-right:10px; _ margin-right:5px;}
+.basicModal .basictopCurve h3{color:#999; font-size:14px; margin:0; padding:0 0 0 30px}
+.basicModal .basictopCurve h2 span.closeButton a:hover{background-position:0 -33px}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+.basicModal .basictopCurve h2 span.closeButton a{margin-top:2px;}
+}   
+.basicModal .basictopCurve p.date{color:#444; font-size:12px; margin:0; padding:5px 0 0 30px}
+.basicModal .basicbottomCurve{background:url(../images/news_basic-bottomcurve.png) left top no-repeat; width:703px; margin:0 auto; height:44px; font-size:1%}
+.basicModal .basictopCurve input.closeBtn{background:url(../images/close_btn.gif) left center no-repeat; width:32px; height:31px; bor der:1px solid red; fl oat:right; margin-left:419px}
+.basicModal .basicTxt{border-left:1px solid #d2d2d2; border-right:1px solid #d2d2d2; margin:0 auto; color:#666; font-size:13px; cle ar:both; height:380px; width:641px; overflow:auto; border-bottom:none; background:#fff; padding:25px 30px; bo rder:1px solid red}
+.basicModal .basicTxt div img{padding:20px 0 20px 0}
+.basicModal .basicTxt p{padding:0; margin:0; color:#666; font-size:13px;}
+/* added: 24-Sept-2010 - News Overlay - spacing between consecutive text paragraphs */
+.basicModal .basicTxt .EverythingComponenttext p{margin-bottom:20px;}
+.basicModal .basicTxt p.bottomtxt{padding:0 0 40px 0; margin:0; color:#666; font-size:13px;}
+.basicModal .basicTxt span.title{padding:0; margin:0; color:#666; font-size:13px; font-weight:bold}
+
+.basicModal .basicTxt p.linkDwn{padding:20px 0 0 0; margin:0; color:#51b1c5; font-size:13px;}
+.basicModal .basicTxt p.linkDwn a{padding:0; margin:0; margin-bottom:10px; color:#51b1c5; font-size:13px; font-weight:bold}
+.basicModal .basicTxt p.linkDwn a:hover{text-decoration:underline}
+.basicModal .basicbottomCurve .moreLink{position:absolute; margin:13px 525px; width:100px; bord er:1px solid red}
+.basicModal .basicbottomCurve .moreLink a{
+    color:#51b1c5;
+    font-weight:bold;
+    font-size:13px;
+    background:url(../images/green-arrow.gif) right 7px no-repeat; width:13px; height:5px; padding:0 15px 0 0;
+    text-decoration:none;
+}   
+.basicModal .basicbottomCurve .moreLink a:hover {
+    text-decoration:underline;
+}
+
+.basicModal .basicbottomCurve .printLink
+{
+    position:absolute; 
+    margin:13px 18px; 
+}
+.basicModal .basicbottomCurve .printLink a{
+    color:#51b1c5;
+    font-weight:bold;
+    font-size:13px;
+    bac kground:url(../images/green-arrow.gif) right 7px no-repeat; 
+    width:13px; 
+    height:5px; 
+    padding:0 15px 0 0;
+    text-decoration:none;
+}  
+.basicModal .basicbottomCurve .printLink a:hover {
+    text-decoration:none;
+}
+
+.basicModal .basicbottomCurve .textSize-overlay{bor der:1px solid red}
+.basicModal .basicbottomCurve ul{margin:10px 18px 0 0; padding:0; float:right;_margin:10px 9px 0 0px;}
+.basicModal .basicbottomCurve ul li {
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0 0px 0 0px;
+    height:22px;
+}
+.basicModal .basicbottomCurve ul li a {
+    float:left;
+    display:block;
+    height:22px;
+    overflow:hidden;
+    text-indent:-999px;
+}
+.basicModal .basicbottomCurve  li.smallTxt a {
+    background: url(../images/text-small-increase-button.gif) left top;
+    width:20px;
+}
+.basicModal .basicbottomCurve  li.bigTxt a {
+    background: url(../images/text-big-increase-buton.gif) left top;
+    width:19px;
+}
+
+.basicModal .basicbottomCurve li a:hover,
+.basicModal .basicbottomCurve li:hover a,
+.basicModal .basicbottomCurve li.hover a {
+    background-position:0 -22px;
+}   
+
+#printBox
+{
+     padding-top:10px;
+}
+
+#printBox .basictopCurve h2
+{
+    color:#fbb316; 
+    font-size:24px; 
+    margin:0; 
+    padding:20px 0 0 0px; 
+}
+
+#printBox .basictopCurve h3
+{
+    color:#999; 
+    font-size:14px; 
+    margin:0; 
+    padding:0 0 0 0px;
+}
+#printBox .basictopCurve p.date
+{
+    color:#444; 
+    font-size:12px; 
+    margin:0; 
+    padding:15px 0px 15px 0px;
+}   
+#printBox a{
+    color:#51b1c5;
+    font-weight:bold;
+    font-size:13px;
+    text-decoration:none;
+   
+}   
+#printBox a:hover {
+    text-decoration:underline;
+}  
+
+/*added for news share options*/
+#news_share_options {
+    /*float:right;
+    margin:-21px 15px 0 0;*/
+     
+    left:570px;
+    position:absolute; 
+    top:60px;
+}
+#news_share_options a {
+    padding-left: 5px;
+} 
+
+/* For Print Window */
+#printBox #news_share_options {
+    float:right;
+    left:0;
+    margin-right:10px;
+    margin-top:-30px;
+    position:relative;
+    top:0;
+}
+#overlay .everythingtable {
+    height: auto;
+    width: auto;
+}
+#printBox .basictopCurve h2 {
+    line-height: 27px;
+}
+

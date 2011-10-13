@@ -1,0 +1,35 @@
+﻿body 
+{
+    background-color: #fff !important;
+    background-image: none !important;
+    text-align: left;
+}
+#notification,
+#main_navigation
+{ display: none; }
+
+#print_label 
+{
+    display: block;
+    float:left;
+    margin: 40px 0 0 -123px;
+}
+#top_content,
+#top_wrapper 
+{
+    background-color: #fff !important;
+    background-image: none !important;
+} 
+#page_wrapper, 
+#page_content
+{
+    padding-top: 100px;
+}
+#breadcrumb 
+{
+    display: block;
+}
+#breadcrumb a.last
+{
+    color: #363636;
+}

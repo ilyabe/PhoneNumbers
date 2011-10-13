@@ -1,0 +1,216 @@
+
+<!-- saved from url=(0070)http://ads.pubmatic.com/AdServer/js/dppix.html?p=27330&s=27331&a=22455 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript">
+var protocol = document.location.protocol != "https:"? "http:" : "https:";
+    document.write("<script type='text/javascript'"
+        + " src='"+ protocol +"//ads.pubmatic.com/AdServer/js/cutil7461c5042928e06d0ddb25dc4baed78b.js' >"
+        + '</' + 'script' + '>');
+</script><script type="text/javascript" src="cutil7461c5042928e06d0ddb25dc4baed78b.js"></script>
+<script type="text/javascript">
+var protocol = document.location.protocol
+   ,secure = protocol == 'https:';
+
+// delivery types(1 = iframe, 2=img, 3 = js)
+// refresh window in days
+//PIXSTART    --DO NOT REMOVE
+ var pix = {
+"23":{"refresh_interval":5,"url":"http://loadm.exelator.com/load/?p=204&g=071&j=0&buid=##PM_UID","secureurl":"https://loadm.exelator.com/load/?p=204&g=071&j=0&buid=##PM_UID","delivery_type":2},
+"24":{"refresh_interval":5,"url":"http://api.bizographics.com/v2/profile.redirect?api_key=1be3a6866fd64648a7b0c808e8551702&group_delimiter=,&industry_delimiter=,&functional_area_delimiter=,&callback_url=http%3A%2F%2Faud.pubmatic.com/AdServer/Artemis%3Fdpid=7","secureurl":"https://api.bizographics.com/v2/profile.redirect?api_key=1be3a6866fd64648a7b0c808e8551702&group_delimiter=,&industry_delimiter=,&functional_area_delimiter=,&callback_url=https%3A%2F%2Fsaud.pubmatic.com/AdServer/Artemis%3Fdpid=7","delivery_type":1},
+"25":{"refresh_interval":5,"url":"http://pixel.quantserve.com/seg/r;a=p-444Ux5EmpXDp6;rand=##PM_RANDOM;redirect=http://aud.pubmatic.com/AdServer/Artemis?dpid=1&segid=!qcsegs","secureurl":"https://pixel.quantserve.com/seg/r;a=p-444Ux5EmpXDp6;rand=##PM_RANDOM;redirect=https://saud.pubmatic.com/AdServer/Artemis?dpid=1&segid=!qcsegs","delivery_type":2},
+"26":{"refresh_interval":1,"url":"http://pixel.quantserve.com/pixel/p-444Ux5EmpXDp6.gif?labels=##PM_PUBID.##PM_SID","secureurl":"https://pixel.quantserve.com/pixel/p-444Ux5EmpXDp6.gif?labels=##PM_PUBID.##PM_SID","delivery_type":2}
+
+};
+//PIXEND
+
+// mapping of which pixels are enabled in which data center
+//DCSTART    --DO NOT REMOVE
+ var dc_pix_map= {
+"1" : [23,24,25,26],
+"2" : [23,24,25,26],
+"3" : [23,24,25,26]
+};
+//DCEND
+
+// details of pixels blocked by pub id
+//PUBSTART    --DO NOT REMOVE
+ var pub_pix_block= {
+"2" : [26]
+};
+//PUBEND
+
+// details of pixels blocked by site id
+//SITESTART    --DO NOT REMOVE
+ var site_pix_block= {
+"3" : [25]
+};
+//SITEEND
+
+// details of pixels blocked by ad tag id
+//ADTAGBLOCKSTART    --DO NOT REMOVE
+ var adid_pix_block= {
+"2" : [25]
+};
+//ADTAGBLOCKEND
+
+// max pixels allowed by publisher
+//PIXCOUNTSTART    --DO NOT REMOVE
+ var pub_max_pix_count= {
+"14880" : 10,
+"25656" : 10
+};
+//PIXCOUNTEND
+
+function queryString(parameter) { 
+  var loc = location.search.substring(1, location.search.length);
+  var param_value = false;
+  var params = loc.split("&");
+  for (i=0; i<params.length;i++) {
+      param_name = params[i].substring(0,params[i].indexOf('='));
+      if (param_name == parameter) {
+          param_value = params[i].substring(params[i].indexOf('=')+1)
+      }
+  }
+  if (param_value) {
+      return param_value;
+  }
+  else {
+      return false; //Here determine return if no parameter is found
+  }
+}
+
+function getDC() {
+	var dcookie= new Cookie("PUBMDCID");
+	return dcookie.get();
+}
+
+function getPMUID() {
+	var uidcookie= new Cookie("KADUSERCOOKIE");
+	return uidcookie.get();
+}
+
+function deleteDPPixOnCookie() {
+        // delete the cookie to indicate dp sync is no longer in progress
+        Delete_Cookie( 'DPPIX_ON', '/', komli_domain);
+}
+
+function substituteMacros(origUrl, pubId, siteId, adId) {
+	var url = origUrl.replace("##PM_PUBID", pubId);
+	url = url.replace("##PM_SID", siteId);
+	url = url.replace("##PM_RANDOM", Math.floor(Math.random()*100000001) + '');
+	
+	var uid = getPMUID();
+	url = url.replace("##PM_UID", uid);
+	return url;			
+}
+
+function fireDPPixels() {
+	pmooCookie = new Cookie('pmoo');
+	pmoo = pmooCookie.get();
+	// do not fire DP pixels if user has opted out
+	if ( pmoo == "true" || pmoo == "TRUE" ) {
+		return;
+	}
+
+	// check if dpsync is in progress
+	var dpPixOnCookie = new Cookie("DPPIX_ON");
+	if( dpPixOnCookie.get() == "" ) {
+		//create a cookie to indicate that dpsync is in progress and so that no other instance is run in parallel. Parallel calls could result in same pixel being fired multiple times. This cookie is deleted after 20 seconds or when the page is unloaded which ever is earlier
+		Set_Cookie( 'DPPIX_ON', 'YES', 20 / (24*60*60), '/', komli_domain, '');
+		// add an event handler so that this cookie which indicates that dp sync is in progress is deleted (if it exists) when the page is unloaded
+		pm_addEventListener_j(window,'unload', deleteDPPixOnCookie, false);
+	}
+	else {
+		//   do nothing if another dpsync is already in progress
+		return;
+	}
+	
+	// get publisher id, site id and ad id at run time from query string
+	var pub=1;
+	pub = queryString( 'p');
+	var site=1;
+	site = queryString( 's');
+	var adid=1;
+	adid = queryString( 'a');
+	// set max pixel count for rotation
+	var max_pix_cnt=4;
+
+	//	change max pixel count for rotation based on publisher 
+	if ( typeof(pub) !== 'undefined' && typeof(pub_max_pix_count[pub]) !== 'undefined' ) {
+		max_pix_cnt=pub_max_pix_count[pub];
+	}
+
+	var dc = getDC();
+	if ( dc == "") dc =1 ;
+
+	//      Create the list of of DataPixels needed (id, refresh_interval, delivery_type, url)
+	var pixels = new DataPixels ();
+
+	//	get all the pixels of this data center
+	dc_pix_list = dc_pix_map[dc] ;
+	//	get all the pixels blocked by this publisher, site or ad
+	var pblock = pub_pix_block[pub];
+	var sblock = site_pix_block[site];
+	var ablock = adid_pix_block[adid];
+
+	//	add unblocked pixels to rotation
+	if( typeof(dc_pix_list) !== 'undefined' )
+	{
+		var maxBLen = 0;
+		if( typeof(pblock) !== 'undefined' && maxBLen < pblock.length ) { maxBLen = pblock.length; }
+		if( typeof(sblock) !== 'undefined' && maxBLen < sblock.length ) { maxBLen = sblock.length; }
+		if( typeof(ablock) !== 'undefined' && maxBLen < ablock.length ) { maxBLen = ablock.length; }
+		
+		for (var i=0; i<dc_pix_list.length; i++)
+		{
+			blocked = 0 ;
+			for(var j=0; j<maxBLen; j++)
+			{
+				if( typeof(pblock) !== 'undefined' && j < pblock.length && typeof(pix[dc_pix_list[i]]) !== 'undefined') {
+					blocked += (dc_pix_list[i] == pblock[j]) ? 1 : 0 ;	
+				}
+				if( typeof(sblock) !== 'undefined' && j < sblock.length && typeof(pix[dc_pix_list[i]]) !== 'undefined' ) {
+					blocked += (dc_pix_list[i] == sblock[j]) ? 1 : 0 ;
+				}
+				if( typeof(ablock) !== 'undefined' && j < ablock.length && typeof(pix[dc_pix_list[i]]) !== 'undefined' ) {
+                                        blocked += (dc_pix_list[i] == ablock[j]) ? 1 : 0 ;
+                                }
+				if( blocked > 0 )
+					break;
+			} 
+			//	add pixel if not blocked for this publsher, site or ad id
+			if ( !blocked && typeof(pix[dc_pix_list[i]]) !== 'undefined' )
+			{
+				var pixUrl =  secure ? pix[dc_pix_list[i]].secureurl : pix[dc_pix_list[i]].url;
+
+				if (undefined == pixUrl || 1 > pixUrl.length) continue; 
+
+				// do nothing if url contains a macro for PM UID but PM UID is not yet defined
+				if( pixUrl.indexOf("##PM_UID") > -1 && getPMUID() == "" ) {
+					//alert(pixUrl + " not being fired as PM UID not found");
+				}
+				else
+				{
+					// substitute macros and add it to list of eligible pixels
+					pixUrl = substituteMacros(pixUrl, pub, site, adid);
+					pixels.add(dc_pix_list[i], pix[dc_pix_list[i]].refresh_interval, pix[dc_pix_list[i]].delivery_type, pixUrl);
+				}
+			}
+		}
+	}
+	//  Select and invoke only defined max number of data pixels
+	pixels.select(max_pix_cnt);
+
+	// delete the cookie that tracks dp sync progress
+	//deleteDPPixOnCookie();
+}
+if( isThirdPartyCookiesEnabled() == 1 ) {
+	fireDPPixels();
+}
+
+</script>
+</head>
+<body marginwidth="0" marginheight="0"> 
+
+
+</body></html>

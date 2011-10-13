@@ -1,0 +1,46 @@
+
+<!-- saved from url=(0049)http://uac.advertising.com/wrapper/aceUACping.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head><body><script type="text/javascript">	
+// pingArray['cookieValue'] = ['extra_tag_property_name', 'matching pixel called']
+var pingArray = new Array();
+pingArray['rm'] = ['rmcpmprice', 'http://cms.ad.yieldmanager.net/v1/cms?esig=1~ed097b82db382a1fd455fb947bcd01b57e206e42&nwid=10000040578'];
+pingArray['am'] = ['amcpmprice', 'http://cmap.am.ace.advertising.com/amcm.ashx?admeld_adprovider_id=1&admeld_call_type=redirect&admeld_callback=http://tag.admeld.com/match'];
+pingArray['dc'] = ['dcprice', 'http://cm.g.doubleclick.net/pixel?nid=aol1'];
+pingArray['an'] = ['anprice', 'http://ib.adnxs.com/getuid?http://cmap.an.ace.advertising.com/ancm.ashx?appnexus_uid=$UID'];
+pingArray['rub'] = ['rubcpmprice', 'http://cmap.rub.ace.advertising.com/rubcm.ashx'];
+pingArray['ox'] = ['oxprice', 'http://cmap.ox.ace.advertising.com/cfcm.ashx?providerId=1009'];
+
+function readCk(name){
+var c=document.cookie,b=c.indexOf(name+'=')
+if(b>=0){b=c.indexOf('=',b)+1; if(b>0){var e=c.indexOf(';',b); if(e==-1) e=c.length; return c.substring(b,e)}}
+return '';}
+
+function writeCk(n,v,e,p,d){
+var date = new Date(), expires = "";
+date.setTime(date.getTime()+((e?e: 1)*24*60*60*1000))
+if (e) expires = "; expires="+date.toGMTString();
+v=escape(v)
+document.cookie = n + "="+ v+ expires+"; path="+(p?p:"/") + "; domain=" +(d?d:"advertising.com");}
+
+function chkRTBPing(extra) {
+var ck=readCk('ACID')
+if (ck!=""&&ck.toLowerCase().indexOf('optout')==-1){
+var sFlag = 0, pings = '', newVal = '', existingC = unescape(readCk('aceRTB')),originalC=existingC,cookieArray = new Array(),existingCookie = existingC.split('|'),date = new Date(),l = existingCookie.length; date.setTime(date.getTime() + (30 * 24 * 60 * 60 * 1000));
+if (existingC == "1") return;
+for (var i = 0; i < l; i++){var kv = existingCookie[i].split('=');
+if (typeof pingArray[kv[0]] != 'undefined'){var now = new Date(), cdate = new Date(kv[1]);if (now < cdate) pingArray[kv[0]][1] = ""; else cookieArray[kv[0]] = date.toUTCString();}}
+for (var i in pingArray){
+if (extra.indexOf(pingArray[i][0]) >= 0) sFlag = 1;
+if (pingArray[i][1] != ""){
+if (sFlag==1 && extra.indexOf(pingArray[i][0]) >= 0){sFlag = -1; pings = ""; existingC = unescape(readCk('aceRTB'));}
+if (sFlag <=0){pings = pings + "<img src='" + pingArray[i][1] + "' width=1 height=1>\n";
+if (sFlag <= 0 && typeof cookieArray[i] != 'undefined')existingC = existingC.replace(eval("/"+i+"(=.*?)(\\||$)/"), i+"="+cookieArray[i]+"|");
+else existingC = existingC + i + "=" + date.toUTCString()+"|";
+if (sFlag < 0){sFlag = 0; break;}}}
+else if (sFlag==1){pings="";existingC = originalC;break;}}
+if (pings) {var imgPings = document.createElement("div");imgPings.innerHTML = pings;
+document.body.appendChild(imgPings)
+writeCk('aceRTB', existingC, 30);}}}
+chkRTBPing((/^extra=(.*?)(&|$)/.test(document.location.search.substr(1))) ? unescape(RegExp.$1) : '');
+</script>
+</body></html>

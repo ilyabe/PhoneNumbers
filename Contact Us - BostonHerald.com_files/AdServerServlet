@@ -1,0 +1,8 @@
+document.write('<div id="http_www_bostonherald_comincludesprocessAds_bgkomli_ads_frame12733027331" style="position: absolute; margin: 0px 0px 0px 0px; height: 0px; width: 0px; top: -10000px; " clickdata=wmoAAMNqAAC3VwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAygAAARQEAANgCAABaAAAABwAAAAAAAAABAAAAMkY4OTZGOUMtMDNBRC00RDEwLTlFOUUtOTRERjIxOTVDREI5AAAAAABOQ09MT1IAAAAAAE5DT0xPUgAAAAAATkNPTE9SAAAAAABOQ09MT1IAAAAAAE5DT0xPUgAAAAA=></div>');
+document.writeln('<'+'script type=\'text/javascript\'>');
+document.writeln('   var ut_ju = \'http://ads.undertone.com/ajs.php\';');
+document.writeln('   ut =new Object();');
+document.writeln('   ut.zoneid=13429;');
+document.writeln('<'+'/script>');
+document.writeln('<'+'script type="text/javascript" src="http://cdn.undertone.com/js/ajs.js"><'+'/script>');
+document.write('<iframe name="pbeacon" frameborder="0" allowtransparency="true" hspace="0" vspace="0" marginheight="0" marginwidth="0" scrolling="no"  width="0"  height="0" style="position:absolute;top:-20000px;" src="http://track.pubmatic.com/AdServer/AdDisplayTrackerServlet?operId=1&pubId=27330&siteId=27331&adId=22455&adServerId=325&kefact=1.288980&kpbmtpfact=0.000000&kadNetFrequecy=1&kadwidth=728&kadheight=90&kadsizeid=7&kltstamp=1318466613&indirectAdId=32818&adServerOptimizerId=1&ranreq=0.26271483628079295&imprCap=1&pageURL=http://www.bostonherald.com/includes/processAds.bg"> </iframe>');document.writeln('<img src="http://pixel.quantserve.com/pixel/p-5aWVS_roA1dVM.gif?labels=News" style="display: none;position:absolute;top:-15000px;" border="0" height="1" width="1" alt="Quantcast"/>');

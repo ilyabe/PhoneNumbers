@@ -1,0 +1,427 @@
+/******************Form**********************/
+
+.labelText td
+{ 
+    font-face:Arial; 
+    font-size:13px; 
+    font-weight:bold;
+    color:#666
+}
+.labelText td p{font-size:13px; color:#666; font-weight:normal;}
+.textArea{margin:50px auto;}
+
+.textarea-topCurveBorder{background:url(../images/textarea-topCurveBorder.gif) left top repeat-x; float:left;}
+.textarea-leftBord{background:url(../images/textarea-leftBord.gif) left top repeat-y;  float:left}
+.textarea-rightBord{background:url(../images/textarea-rightBord.gif) right top repeat-y; float:left}
+.textarea-bottomCurveBorder{background:url(../images/textarea-bottomCurveBorder.gif) left bottom repeat-x; float:left}
+
+.textLeftTopCurve{background:url(../images/textarea-LtopCurve.gif) left top no-repeat; float:left;}
+.textRightTopCurve{background:url(../images/textarea-RtopCurve.gif) right top no-repeat; float:left;}
+.textLeftBotCurve{background:url(../images/textarea-LbottomCurve.gif) left bottom no-repeat; float:left}
+.textRightBotCurve{background:url(../images/textarea-RbottomCurve.gif) right bottom no-repeat;  float:left}
+  
+.textBoxArea{width:auto; height:auto; float:left; padding:10px; margin:0; }
+.textAreaCont{border:10px solid #fff; width:auto; float:left; outline:0 none;overflow:auto; font-size:13px; color:#666 }
+input.submitButton
+{
+    border:0px; 
+    background:url(../images/search-Btn.gif) left top no-repeat; 
+    width:66px; 
+    height:31px; 
+    overflow:hidden; 
+    display:block; 
+    float:left;
+    color:#fff; 
+    font-size:13px; 
+    font-weight:bold; 
+    padding:0; 
+    margin:0; 
+    cursor:pointer 
+}
+input.submitButton:hover{background-position:0 -31px}
+
+
+span.FormSmallInput
+{
+    background:url(../images/small-search-input-bg.png) left top no-repeat; 
+    width:50px; 
+    height:31px; 
+    border:none; 
+    vertical-align:middle;
+    padding:7px 5px; 
+    font-size:13px; 
+    color:#666; 
+    float:left; 
+    margin:0; 
+}
+input.FormSmallText{
+    border-left-width:0;
+    border-right-width:0;
+    border-bottom-width:0;
+    border-top-width:0;
+    width:40px;
+    padding:0px 2px 0 2px; 
+    font-size:13px; 
+    color:#666; 
+    float:left; 
+    outline:0 none;
+    
+    }
+span.FormMIDInput
+{
+    background:url(../images/small-search-inputM-bg.png) left top no-repeat; 
+    width:250px; 
+    height:31px; 
+    border:none; 
+    vertical-align:middle; 
+    padding:7px 5px; 
+    font-size:13px; 
+    color:#666; 
+    float:left; 
+    margin:0; 
+}
+input.FormMIDText{
+    border-left-width:0;
+    border-right-width:0;
+    border-bottom-width:0;
+    border-top-width:0;
+    width:215px;
+    padding:0px 2px 0 2px; font-size:13px; color:#666; float:left;  outline:0 none;
+    
+    }
+span.FormMiddleInput
+{
+    background:url(../images/small-search-inputM2-bg.png) left top no-repeat; 
+    width:150px; 
+    height:31px; 
+    border:none; 
+    vertical-align:middle; 
+    padding:7px 5px; 
+    font-size:13px; 
+    color:#666; 
+    float:left; 
+    margin:0;
+}
+span.FormMIDInput a img
+{
+    margin-left:10px;
+}
+input.FormMiddleText{
+    border-left-width:0;
+    border-right-width:0;
+    border-bottom-width:0;
+    border-top-width:0;
+    ma rgin-left:2px;
+    width:115px;
+    padding:0px 2px 0 2px; 
+    font-size:13px; 
+    color:#666; 
+    float:left;  
+    outline:0 none;
+    
+    }
+span.FormInput
+{
+    background:url(../images/error_page-inputBg.gif) left top no-repeat; 
+    width:265px; 
+    height:31px; 
+    border:none; 
+    vertical-align:middle; 
+    padding:7px 5px; 
+    font-size:13px; 
+    color:#666; 
+    float:left
+}
+input.FormText{
+    border-left-width:0;
+    border-right-width:0;
+    border-bottom-width:0;
+    border-top-width:0;
+    margin-left:2px;
+    width:250px;
+    padding:0px 2px 0 2px; font-size:13px; color:#666; float:left; outline:0 none;
+    
+    }
+
+/*Css Start for Combo Box from Here*/
+.comboBox
+{
+    padding:7px 0 0 0;
+}
+.comboBox span.comoTxt
+{ 
+    margin:15px 10px 0 0px; 
+    padding:0; 
+    font-size:13px; 
+    color:#666; 
+    float:left;
+}
+.comboBoxFirst
+{
+    padding:0; 
+    margin:0 10px 0 595px; 
+    wid th:290px; 
+    position:absolute; 
+    margin-top:-40px;
+}
+.comboBoxFirst span.comboBoxFirst
+{
+    font-size:13px; 
+    color:#666; 
+    wid th:200px;  
+    margin:13px 0 0 0; 
+    padding:0; 
+    position:relative; 
+    float:left;
+}
+.comboBoxSecond
+{
+    padding:1px 0 0 0; 
+    margin:0; 
+    fl oat:left
+}
+.comboBoxSecond span.comoTxtSecond
+{ 
+    margin:15px 10px 0 100px; 
+    padding:0; 
+    font-size:13px; 
+    color:#666; 
+    float:left;
+}
+.safariCombo {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:11px;
+    position:relative;
+    float:left;
+    padding:1px 0 1px 0;
+    zoom:1; 
+}
+.safariCombo a.selected{
+    line-height:41px;
+    float:left;
+    position:absolute;
+    outline:none;   
+    height:35px;
+    background:url(../images/combo-Bglft.png) no-repeat left top;
+    text-decoration:none;       
+    font-size:12px;
+    color:#666;
+}
+.safariCombo a.selected:hover{
+    color:#4d5e7c;
+}
+.safariCombo a.selected span{
+    background:url(../images/combo-Bg.png) no-repeat right top;
+    padding-right:45px;
+    float:left;
+    white-space:nowrap;
+    margin-left:10px;
+    cursor:pointer;
+}
+.safariCombo a.selected:hover span{
+    background:url(../images/combo-Bg.png) no-repeat right bottom;
+}
+.safariCombo .dropdown{
+    height:auto;
+    overf low:auto;
+    width:auto;
+    position:absolute;
+    list-style:none;
+    margin:32px 0 0 0;
+    display:none;
+    /* #left:-40px;
+    top:0;*/
+    clear:both;
+    zoom:1;
+
+}
+.safariCombo .dropdown li {
+    white-space:nowrap;
+}
+
+/*CSS Start for Combo DropDn Area here*/
+.comboBoxarea
+{
+    margin:0; 
+    padding:0; 
+    position:absolute; 
+}
+.comboBoxarea .comboLeftShadow
+{
+    background:url(../images/combo-leftShadow.png) left top repeat-y; 
+    width:3px; 
+    height:10px; 
+    padding-top:0.9em; 
+    float:left
+}
+.comboBoxarea .comboRightShadow
+{
+    background:url(../images/combo-rightShadow.png) left top repeat-y; 
+    width:3px; 
+    height:10px; 
+    float:left; 
+    padding-top:0.9em;
+}
+.comboBoxarea .comboArea
+{
+    background:#f0f0f0; 
+    float:left
+}
+.comboBoxarea .comboArea ul
+{
+    list-style:none; 
+    float:left; 
+    padding:0; 
+    margin:0
+}
+.comboBoxarea .comboArea ul li
+{
+    padding:0; 
+    margin:0; 
+    display:block;  
+    font-size:13px; 
+    font-weight:normal; 
+    border-top:1px solid #cfcfcf;
+}
+.comboBoxarea .comboArea ul li a
+{
+    display:block; 
+    font-size:13px; 
+    font-weight:normal; 
+    color:#666; 
+    text-decoration:none; 
+    padding:5px 10px 2px 10px
+}
+.comboBoxarea .comboArea ul li a:hover
+{
+    background:url(../images/combo-over-bg.png) left top repeat-x; 
+    display:block; 
+    heig ht:20px; 
+}
+.botCurveArea
+{
+    clear:both; 
+    height:auto; 
+    min-height:8px;
+}
+.botCurveArea .leftBotCurve
+{
+    background:url(../images/combo-leftCurve.png) left top no-repeat; 
+    height:8px; 
+    width:7px; 
+    float:left;font-size:1%
+}
+.botCurveArea .BotCurve
+{
+    background:url(../images/combo-bgc.png) left bottom repeat-x; 
+    height:8px; 
+    float:left; 
+    font-size:1%
+}
+.botCurveArea .rightBotCurve
+{
+    background:url(../images/combo-rightCurve.png) left top no-repeat; 
+    height:8px; 
+    width:7px; 
+    float:left; 
+    font-size:1%
+}
+   
+span.radio
+{
+    background:transparent url(../images/radio.gif) no-repeat 0 0;  
+    clear:left; display:block; 
+    float:left; 
+    height:20px; 
+    padding:0 0px 0 0;  
+    width:19px;
+}
+
+.flexiBtn a
+{
+    background: transparent url('../images/flexiBtn-leftImage.gif') no-repeat top left;
+    display: block;
+    float: left;
+    /*font: normal 13px Tahoma;  Change 13px as desired */
+    line-height: 21px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 24px) */
+    height: 31px; /* Height of button background height */
+    padding-left: 7px; /* Width of left menu image */
+    text-decoration: none;
+    color:#1b1b1b;
+    font-family:12px;
+    text-transform:uppercase;
+    font-weight:bold; 
+}
+.flexiBtn a,.flexiBtn a:link,.flexiBtn a:visited,.flexiBtn a:active
+{
+    color:#fff;
+    font-family:12px;
+    text-transform:uppercase;
+    font-weight:bold; /*button text color*/
+}
+
+.flexiBtn a span
+{
+    background: transparent url('../images/flexiBtn-rightImage.gif') no-repeat top right;
+    display: block;
+    padding: 5px 7px 5px 0; /*Set 11px below to match value of 'padding-left' value above*/
+}
+
+.flexiBtn a:hover
+{ /* Hover state CSS */
+    background-position: bottom left;
+}
+ 
+.flexiBtn a:hover span
+{ /* Hover state CSS */
+    background-position: bottom right;
+    color: #fff;
+}
+/******************Form**********************/
+
+.lgbox_contain {
+    background-color: #ffffff;
+    BACKGROUND-POSITION: 50% bottom; 
+    BACKGROUND-IMAGE: url(../images/gradient.jpg); 
+    WIDTH: 400px; 
+    BACKGROUND-REPEAT: repeat-x;
+    padding: 10px;
+    margin-top:300px;
+    margin-left:150px;
+}
+.lgbox_content {
+    BORDER-RIGHT: #cccccc 1px solid; 
+    PADDING-RIGHT: 12px; 
+    PADDING-LEFT: 12px; 
+    BORDER-LEFT: #cccccc 1px solid; 
+}
+.lgbox_top {
+    BACKGROUND-IMAGE: url(../images/top_repeat.jpg); WIDTH: 100%; BACKGROUND-REPEAT: repeat-x; HEIGHT: 6px
+}
+.lgbox_top_heading {
+    BACKGROUND-POSITION: right bottom; BACKGROUND-IMAGE: url(../images/top_heading_bg.jpg); BACKGROUND-REPEAT: no-repeat; HEIGHT: 24px
+}
+.lgbox_heading_text {
+    PADDING-RIGHT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #000000; BACKGROUND-COLOR: #ffffff
+}
+.lgbox_top_left {
+    FLOAT: left
+}
+.lgbox_top_right {
+    FLOAT: right
+}
+.lgbox_bottom {
+    BACKGROUND-IMAGE: url(../images/btm_repeat.jpg); WIDTH: 100%; BACKGROUND-REPEAT: repeat-x; HEIGHT: 6px
+}
+.lgbox_btm_left {
+    FLOAT: left
+}
+.lgbox_btm_right {
+    FLOAT: right
+}
+.lgbox_close {
+     color:#666666; font-weight:bold
+}
+a.lgbox_close:hover {
+     color:#666666; 
+}  

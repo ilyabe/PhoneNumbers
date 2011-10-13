@@ -1,0 +1,695 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+ font-family: "Myriad Pro";
+ src: url("http://www.seochat.com/developershed_navbar/css/MyriadPro-Regular.otf");
+}
+
+/* main wrapper */
+#wrapper {
+    width: 100%;
+    top:0;
+    z-index:999999;
+    background-color: #FFF;
+    font-family: "Myriad Pro", Verdana, Tahoma, Arial !important;
+}
+/* ---------------- Navigation bar ---------------- */
+/* navigation section */
+#navigation {
+    width: 1010px;
+    margin: 0 auto;
+    position: relative;    
+}
+/* primary navigation section */
+ul#main-nav {
+    width: 1010px;
+    height: 46px;
+    margin: 0 auto;
+}
+/* position relatively all list items */
+ul#main-nav li {
+    position: relative;
+}
+/* list items in main navbar */
+ul#main-nav>li {
+    float: left;
+    width: 152px;
+    height: 46px;
+    border-right: 2px solid #fff;
+}
+/* anchors in main navbar */
+ul#main-nav>li>a {
+    display: block;
+    height: 46px;
+    text-indent: -9999px;
+}
+
+/* ----------------- tabs for current sites ----------------- */
+/* (dynamically generated according to the site being viewed) */
+
+/* when Devshed is the current site */
+ul#main-nav>li#devshed-current {
+    width: 197px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") 0 -138px no-repeat;
+}
+/* when DevArticles is the current site */
+ul#main-nav>li#devarticles-current {
+    width: 197px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") -197px -138px no-repeat;
+}
+/* when ASP free is the current site */
+ul#main-nav>li#aspfree-current {
+    width: 197px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") -394px -138px no-repeat;
+}
+/* when SEO Chat is the current site */
+ul#main-nav>li#seochat-current {
+    width: 197px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") -591px -138px no-repeat;
+}
+/* when Tutorialized is the current site */
+ul#main-nav>li#tutorialized-current {
+    width: 197px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") -788px -138px no-repeat;
+}
+/* when Scripts is the current site */
+ul#main-nav>li#scripts-current {
+    width: 197px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") -985px -138px no-repeat;
+}
+/* when DevHardware is the current site */
+ul#main-nav>li#devhardware-current {
+    width: 197px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") -1182px -138px no-repeat;
+}
+/* when Web Hosters is the current site */
+ul#main-nav>li#webhosters-current {
+    width: 197px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") -1379px -138px no-repeat;
+}
+/* when Codewalkers is the current site */
+ul#main-nav>li#codewalkers-current {
+    width: 197px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") -1576px -138px no-repeat;
+}
+/* when Dev Mechanics is the current site */
+ul#main-nav>li#devmechanic-current {
+    width: 197px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") 0 -184px no-repeat;
+}
+
+/* ---------------- individual web sites tabs ---------------- */
+/* (they can be displayed in the main navbar or in the Network Devshed bar) */
+
+/* Devshed list item */
+li#devshed {
+    width: 152px;
+    height: 46px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") -456px 0 no-repeat;
+}
+li#devshed:hover {
+    background-position: -456px -46px;
+}
+/* DevArticles list item */
+li#devarticles {
+    width: 152px;
+    height: 46px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") -152px 0 no-repeat;
+}
+li#devarticles:hover {
+    background-position: -152px -46px;
+}
+/* ASP Free list item */
+li#aspfree {
+    width: 152px;
+    height: 46px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") 0 0 no-repeat;
+}
+li#aspfree:hover {
+    background-position: 0 -46px;
+}
+/* SEO Chat list item */
+li#seochat {
+    width: 152px;
+    height: 46px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") -304px 0 no-repeat;
+}
+li#seochat:hover {
+    background-position: -304px -46px;
+}
+/* Tutorialized list item */
+li#tutorialized {
+    width: 152px;
+    height: 46px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") -608px 0 no-repeat;
+}
+li#tutorialized:hover {
+    background-position: -608px -46px;
+}
+/* Scripts list item */
+li#scripts {
+    width: 152px;
+    height: 46px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") -760px 0 no-repeat;
+}
+li#scripts:hover {
+    background-position: -760px -46px;
+}
+/* DevHardware list item */
+li#devhardware {
+    width: 152px;
+    height: 46px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") -912px 0 no-repeat;
+}
+li#devhardware:hover {
+    background-position: -912px -46px;
+}
+/* Web Hosters list item */
+li#webhosters {
+    width: 152px;
+    height: 46px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") -1064px 0 no-repeat;
+}
+li#webhosters:hover {
+    background-position: -1064px -46px;
+}
+/* Codewalkers list item */
+li#codewalkers {
+    width: 152px;
+    height: 46px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") -1216px 0 no-repeat;
+}
+li#codewalkers:hover {
+    background-position: -1216px -46px;
+}
+/* Dev Mechanic list item */
+li#devmechanic {
+    width: 152px;
+    height: 46px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") -1368px 0 no-repeat;
+}
+li#devmechanic:hover {
+    background-position: -1368px -46px;
+}
+
+/* ---------------- Devshed Network tab ---------------- */
+
+/* Devshed Network list item */
+ul#main-nav>li#devshed-network {
+    background: url("/developershed_navbar/images/navbar_sprite.png") -1520px 0 no-repeat;
+}
+ul#main-nav>li#devshed-network:hover {
+    background-position: -1520px -46px;
+}
+/* display the Devshed Network submenu when hovering on the associated list item */ 
+ul#main-nav>li#devshed-network:hover>ul {
+    visibility: visible;
+}
+/* Devshed Network submenu */
+ul#main-nav>li#devshed-network>ul {
+    visibility: hidden;
+    position: absolute;
+    top: 45px;
+    left: 0;
+}
+/* list items in Devshed Network submenu */
+ul#main-nav>li#devshed-network>ul>li {
+    float: left;
+    border-top: 2px solid #fff;    
+}
+/* anchors in Devshed Network submenu */
+ul#main-nav>li#devshed-network>ul>li>a {
+    display: block;
+    height: 46px;
+    text-indent: -9999px;
+}
+/* display Devshed Network flyouts when hovering on the associated list item */ 
+/*ul#main-nav>li#devshed-network>ul>li:hover .submenu {
+    visibility: visible;
+}*/
+/* flyouts in Devshed Network */
+ul#main-nav>li#devshed-network>ul>li .submenu {
+    width: 350px;
+    height: 32px;
+    padding: 3px;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: -365px;
+    border: 4px solid #1d2f61;
+}
+/* list items in flyouts of Devshed Network */
+ul#main-nav>li#devshed-network>ul>li .submenu ul li {
+    display: inline;
+    margin-right: 10px;
+}
+/* h2 elements in flyouts of Devshed Network */
+ul#main-nav>li#devshed-network>ul>li .submenu h2 {
+    line-height: 13px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #5580aa;
+}
+/* anchors in flyouts of Devshed Network */
+ul#main-nav>li#devshed-network>ul>li .submenu a {
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #384c82;
+    border-bottom: 1px solid #828ba7;   
+}
+
+/* ---------------- Topics/Forums tabs ---------------- */
+
+/* display the Topics/Forums menu when hovering on the current site item */
+ul#main-nav>li.current:hover>ul {
+    visibility: visible;
+}
+/* Topics/Forums menu */
+ul#main-nav>li.current>ul {
+    visibility: hidden;
+    width: 197px;
+    padding: 20px 0 20px 0;
+    background-color: #1d2f61;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+/* float list items in Topics/Forums menu (fixes an IE bug) */
+ul#main-nav>li.current>ul>li {
+    float: left;
+}
+/* anchors in Topics/Forums menu */
+ul#main-nav>li.current>ul>li>a {
+    display: block;
+    width: 197px;
+    height: 40px;
+    text-indent: -9999px;
+}
+/* Topics tab for each web site */
+li#topics-devshed, li#topics-devarticles, li#topics-aspfree, li#topics-seochat, li#topics-devhardware, li#topics-scripts, li#topics-webhosters, li#topics-codewalkers, li#topics-tutorialized, li#topics-devmechanic {
+    width: 197px;
+    height: 40px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") -197px -184px no-repeat;
+}
+li#topics-devshed:hover, li#topics-devarticles:hover, li#topics-aspfree:hover, li#topics-seochat:hover, li#topics-devhardware:hover, li#topics-scripts:hover, li#topics-webhosters:hover, li#topics-codewalkers:hover, li#topics-tutorialized:hover, li#topics-devmechanic:hover {
+    background-position: -394px -184px;
+}
+/* Topics tab's first category (this section is optional) */
+li#topics-devshed #first-category, li#topics-devarticles #first-category, li#topics-aspfree #first-category, li#topics-seochat #first-category, li#topics-devhardware #first-category, li#topics-scripts #first-category, li#topics-webhosters #first-category, li#topics-codewalkers #first-category, li#topics-tutorialized #first-category, li#topics-devmechanic #first-category {
+    float: left;
+    margin-right: 40px;
+}
+li#topics-devshed #first-category ul, li#topics-devarticles #first-category ul, li#topics-aspfree #first-category ul, li#topics-seochat #first-category ul, li#topics-devhardware #first-category ul, li#topics-scripts #first-category ul, li#topics-webhosters #first-category ul, li#topics-codewalkers #first-category ul, li#topics-tutorialized #first-category ul, li#topics-devmechanic #first-category ul {
+    margin-left: 20px;
+}
+/* list items in Topics tab's first category section */
+li#topics-devshed #first-category ul li, li#topics-devarticles #first-category ul li, li#topics-aspfree #first-category ul li, li#topics-seochat #first-category ul li, li#topics-devhardware #first-category ul li, li#topics-scripts #first-category ul li, li#topics-webhosters #first-category ul li, li#topics-codewalkers #first-category ul li, li#topics-tutorialized #first-category ul li, li#topics-devmechanic #first-category ul li {
+    list-style: disc inside;
+}
+/* anchors in Topics tab's first category section */
+li#topics-devshed #first-category ul li a, li#topics-devarticles #first-category ul li a, li#topics-aspfree #first-category ul li a, li#topics-seochat #first-category ul li a, li#topics-devhardware #first-category ul li a, li#topics-scripts #first-category ul li a, li#topics-webhosters #first-category ul li a, li#topics-codewalkers #first-category ul li a, li#topics-tutorialized #first-category ul li a, li#topics-devmechanic #first-category ul li a {
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+    color: #000;   
+}
+/* Topics tab's second category section */
+li#topics-devshed #second-category, li#topics-devarticles #second-category, li#topics-aspfree #second-category, li#topics-seochat #second-category, li#topics-devhardware #second-category, li#topics-scripts #second-category, li#topics-webhosters #second-category, li#topics-codewalkers #second-category, li#topics-tutorialized #second-category, li#topics-devmechanic #second-category {
+    float: left;
+}
+li#topics-devshed #second-category ul, li#topics-devarticles #second-category ul, li#topics-aspfree #second-category ul, li#topics-seochat #second-category ul, li#topics-devhardware #second-category ul, li#topics-scripts #second-category ul, li#topics-webhosters #second-category ul, li#topics-codewalkers #second-category ul, li#topics-tutorialized #second-category ul, li#topics-devmechanic #second-category ul {
+    float: left;
+    margin-left: 20px;
+}
+/* anchors in Topics tab's second category section */
+li#topics-devshed #second-category ul li a, li#topics-devarticles #second-category ul li a, li#topics-aspfree #second-category ul li a, li#topics-seochat #second-category ul li a, li#topics-devhardware #second-category ul li a, li#topics-scripts #second-category ul li a, li#topics-webhosters #second-category ul li a, li#topics-codewalkers #second-category ul li a, li#topics-tutorialized #second-category ul li a, li#topics-devmechanic #second-category ul li a {
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #384c82;
+    border-bottom: 1px solid #828ba7;
+}
+/* Forums tab */
+li#forums-devshed, li#forums-devarticles, li#forums-aspfree, li#forums-seochat, li#forums-devhardware, li#forums-scripts, li#forums-webhosters, li#forums-codewalkers, li#forums-tutorialized, li#forums-devmechanic {
+    width: 197px;
+    height: 40px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") -591px -184px no-repeat;
+}
+li#forums-devshed:hover, li#forums-devarticles:hover, li#forums-aspfree:hover, li#forums-seochat:hover, li#forums-devhardware:hover, li#forums-scripts:hover, li#forums-webhosters:hover, li#forums-codewalkers:hover, li#forums-tutorialized:hover, li#forums-devmechanic:hover {
+    background-position: -788px -184px;
+}
+/* Forums tab's discussion section */
+li#forums-devshed #forums-discussions, li#forums-devarticles #forums-discussions, li#forums-aspfree #forums-discussions, li#forums-seochat #forums-discussions, li#forums-devhardware #forums-discussions, li#forums-scripts #forums-discussions, li#forums-webhosters #forums-discussions, li#forums-codewalkers #forums-discussions, li#forums-tutorialized #forums-discussions, li#forums-devmechanic #forums-discussions {
+    float: left;
+    margin-right: 40px;
+}
+li#forums-devshed #forums-discussions ul, li#forums-devarticles #forums-discussions ul, li#forums-aspfree #forums-discussions ul, li#forums-seochat #forums-discussions ul, li#forums-devhardware #forums-discussions ul, li#forums-scripts #forums-discussions ul, li#forums-webhosters #forums-discussions ul, li#forums-codewalkers #forums-discussions ul, li#forums-tutorialized #forums-discussions ul, li#forums-devmechanic #forums-discussions ul {
+    margin-left: 20px;
+}
+/* list items in Forums tab's discussion section */
+li#forums-devshed #forums-discussions ul li, li#forums-devarticles #forums-discussions ul li, li#forums-aspfree #forums-discussions ul li, li#forums-seochat #forums-discussions ul li, li#forums-devhardware #forums-discussions ul li, li#forums-scripts #forums-discussions ul li, li#forums-webhosters #forums-discussions ul li, li#forums-codewalkers #forums-discussions ul li, li#forums-tutorialized #forums-discussions ul li, li#forums-devmechanic #forums-discussions ul li {
+    list-style: disc inside;
+}
+/* anchors in Forums tab's discussion section */
+li#forums-devshed #forums-discussions ul li a, li#forums-devarticles #forums-discussions ul li a, li#forums-aspfree #forums-discussions ul li a, li#forums-seochat #forums-discussions ul li a, li#forums-devhardware #forums-discussions ul li a, li#forums-scripts #forums-discussions ul li a, li#forums-webhosters #forums-discussions ul li a, li#forums-codewalkers #forums-discussions ul li a, li#forums-tutorialized #forums-discussions ul li a, li#forums-devmechanic #forums-discussions ul li a {
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #ccc;
+}
+/* Forums tab's popular topics section */
+li#forums-devshed #forums-topics, li#forums-devarticles #forums-topics, li#forums-aspfree #forums-topics, li#forums-seochat #forums-topics, li#forums-devhardware #forums-topics, li#forums-scripts #forums-topics, li#forums-webhosters #forums-topics, li#forums-codewalkers #forums-topics, li#forums-tutorialized #forums-topics, li#forums-devmechanic #forums-topics {
+    float: left;
+}
+li#forums-devshed #forums-topics ul, li#forums-devarticles #forums-topics ul, li#forums-aspfree #forums-topics ul, li#forums-seochat #forums-topics ul, li#forums-devhardware #forums-topics ul, li#forums-scripts #forums-topics ul, li#forums-webhosters #forums-topics ul, li#forums-codewalkers #forums-topics ul, li#forums-tutorialized #forums-topics ul, li#forums-devmechanic #forums-topics ul {
+    float: left;
+    margin-left: 20px;
+}
+/* anchors in Forums tab's popular topics section */
+li#forums-devshed #forums-topics ul li a, li#forums-devarticles #forums-topics ul li a, li#forums-aspfree #forums-topics ul li a, li#forums-seochat #forums-topics ul li a, li#forums-devhardware #forums-topics ul li a, li#forums-scripts #forums-topics ul li a, li#forums-webhosters #forums-topics ul li a, li#forums-codewalkers #forums-topics ul li a, li#forums-tutorialized #forums-topics ul li a, li#forums-devmechanic #forums-topics ul li a {
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #384c82;
+    border-bottom: 1px solid #828ba7;
+}
+/* flyouts of Topics/Forums tabs */
+ul#main-nav>li.current>ul>li .submenu {
+    width: 780px;
+    padding: 3px 3px 5px 3px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 198px;
+    border: 4px solid #1d2f61;
+}
+/* h2 elements in flyouts of Topics/Forums tabs */
+ul#main-nav>li.current>ul>li .submenu h2 {
+    line-height: 17px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #5580aa;
+}
+
+/* ---------------- Flyouts of the main navbar ---------------- */
+/* (used by the sites shown in the main navbar) */
+.submenu-tab-left {
+    width: 700px;
+    padding: 3px 0 5px 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 43px;
+    left: 0;
+    border: 4px solid #1d2f61;
+}
+.submenu-tab-middle {
+    width: 700px;
+    padding: 3px 0 5px 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 43px;
+    left: -154px;
+    border: 4px solid #1d2f61;
+}
+.submenu-tab-right {
+    width: 700px;
+    padding: 3px 0 5px 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 43px;
+    left: -308px;
+    border: 4px solid #1d2f61;
+}
+/* h2 elements in main navbar flyouts */
+.submenu-tab-left h2, .submenu-tab-middle h2, .submenu-tab-right h2 {
+    line-height: 17px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #5580aa; 
+}
+/* list items in main navbar flyouts */
+.submenu-tab-left li, .submenu-tab-middle li, .submenu-tab-right li {
+    display: inline;
+    margin-right: 10px;
+}
+/* anchors in main navbar flyouts */
+.submenu-tab-left a, .submenu-tab-middle a, .submenu-tab-right a {
+    font-size: 17px;
+    font-weight: bold;
+    color: #384c82;
+}
+
+/* ---------------- Login/Sign-up tab ---------------- */
+
+/* login/sign-up list item */
+ul#main-nav li#login-registration {
+    width: 195px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") -1672px 0 no-repeat;
+    border: none;
+}
+ul#main-nav li#login-registration:hover {
+    background-position: -1672px -92px;
+}
+/* display the login/sign-up flyout when hovering on the associated list item */
+ul#main-nav li#login-registration:hover #login-submenu {
+    visibility: visible;
+}
+/* login/sign-up flyout */
+ul#main-nav li#login-registration #login-submenu {
+    visibility: hidden;
+    width: 220px;
+    padding: 15px 10px 15px 10px;
+    background-color: #fff;
+    position: absolute;
+    top: 43px;
+    left: -53px;
+    border: 4px solid #1d2f61;
+}
+/* login/sign-up form */
+ul#main-nav li#login-registration form {
+    display: block;
+    margin-left: 15px;
+}
+/* fieldset element in login/sign-up form */
+ul#main-nav li#login-registration form fieldset {
+    display: block;
+    border: none;
+}
+/* list items in login/sign-up form */
+ul#main-nav li#login-registration form fieldset ul li {
+    margin-bottom: 10px;
+}
+/* label element in login/sign-up form */
+ul#main-nav li#login-registration form fieldset ul label {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #5580aa;
+}
+/* text boxes in login/sign-up form */
+ul#main-nav li#login-registration form fieldset ul input.text {
+    width: 180px;
+    padding: 2px;
+    font: normal 12px Arial, Helvetica, sans-serif;
+    border: 1px solid #5580aa;;
+}
+/* submit button in login/sign-up form */
+ul#main-nav li#login-registration form fieldset ul input.submit {
+    display: block;
+    width: 90px;
+    height: 25px;
+    background: url("/developershed_navbar/images/navbar_sprite.png") -985px -184px no-repeat;
+    text-indent: -9999px;
+    cursor: pointer;
+    cursor: hand;
+    border: none;
+}
+/* anchor in sign-up section */
+ul#main-nav li#login-registration form fieldset ul li#sign-up a {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #384c82;
+    border-bottom: 1px solid #828ba7;
+}
+/* anchor in lost-password section */
+ul#main-nav li#login-registration form fieldset ul li#lost-password a {
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #384c82;
+    border-bottom: 1px solid #828ba7;
+}
+/* item list to display the username */
+ul#main-nav li#login-registration ul#user li#username {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #5580aa;
+}
+/* logout anchor */
+ul#main-nav li#login-registration ul#user li#username a {
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #384c82;
+}
+
+
+
+/* ----------------- web sites logos  ------------------ */
+/* (absolutely positioned over the current web site tab) */
+
+#devshed-logo {
+    width: 70px;
+    height: 68px;
+    background: url("/developershed_navbar/images/logo_sprite.png") 0 0 no-repeat;
+    position: absolute;
+    top: 8px;
+    left: 3px;
+}
+#devarticles-logo {
+    width: 70px;
+    height: 70px;
+    background: url("/developershed_navbar/images/logo_sprite.png") 0 -257px no-repeat;
+    position: absolute;
+    top: 10px;
+    left: 3px;
+}
+#aspfree-logo {
+    width: 70px;
+    height: 62px;
+    background: url("/developershed_navbar/images/logo_sprite.png") 0 -195px no-repeat;
+    position: absolute;
+    top: 10px;
+    left: 3px;
+}
+#seochat-logo {
+    width: 70px;
+    height: 35px;
+    background: url("/developershed_navbar/images/logo_sprite.png") 0 -433px no-repeat;
+    position: absolute;
+    top: 20px;
+    left: 3px;
+}
+#devhardware-logo {
+    width: 70px;
+    height: 67px;
+    background: url("/developershed_navbar/images/logo_sprite.png") 0 -327px no-repeat;
+    position: absolute;
+    top: 10px;
+    left: 3px;
+}
+#webhosters-logo {
+    width: 70px;
+    height: 59px;
+    background: url("/developershed_navbar/images/logo_sprite.png") 0 -68px no-repeat;
+    position: absolute;
+    top: 10px;
+    left: 3px;
+}
+h4 a {
+    display: block;
+    width: 70px;
+    height: 35px;
+    text-indent: -9999px;
+}
+#scripts-logo {
+    width: 70px;
+    height: 39px;
+    background: url("/developershed_navbar/images/logo_sprite.png") 0 -394px no-repeat;
+    position: absolute;
+    top: 15px;
+    left: 3px;
+}
+#tutorialized-logo {
+    width: 70px;
+    height: 68px;
+    background: url("/developershed_navbar/images/logo_sprite.png") 0 -127px no-repeat;
+    position: absolute;
+    top: 8px;
+    left: 3px;
+}
+#codewalkers-logo {
+    width: 70px;
+    height: 65px;
+    background: url("/developershed_navbar/images/logo_sprite.png") 0 -468px no-repeat;
+    position: absolute;
+    top: 6px;
+    left: 3px;
+}
+#devmechanic-logo {
+    width: 70px;
+    height: 58px;
+    background: url("/developershed_navbar/images/logo_sprite.png") 0 -536px no-repeat;
+    position: absolute;
+    top: 10px;
+    left: 3px;
+}
+
+/* Ajax loader (optional) */
+.loader {
+    width: 200px;
+    padding-left: 40px;
+    background: url("/developershed_navbar/images/ajax_loader.gif") left center no-repeat;
+    line-height: 30px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: #585858;
+}
+
+.jbar{
+        height:50px;
+        width:100%;
+        background-color: #fff;
+        position:fixed;
+        filter:progid:DXImageTransform.Microsoft.Alpha(opacity=95);
+        opacity: 0.95;
+        -moz-opacity: 0.95;
+        text-align:center;
+        left:0px;
+        z-index:9999999;
+        margin:0px;
+        padding:0px;
+}
+.jbar-top{
+        top:0px;
+        border-top:2px solid #fff;
+        border-bottom: 1px solid #ebebeb;
+}
+.jbar-bottom{
+        bottom:0px;
+        border-bottom:2px solid #fff;
+        border-top: 1px solid #ebebeb;
+        color:#777;
+}
+.jbar-content{
+        line-height:46px;
+        font-size: 18px;
+        font-family:'Lucida Grande',sans-serif;
+}
+a.jbar-cross{
+        position:absolute;
+        width:31px;
+        height:31px;
+        background:transparent url(/developershed_navbar/images/cross.png) no-repeat top left;
+        cursor:pointer;
+        right:10px;
+}
+a.jbar-cross:hover{
+        background-image: url(/developershed_navbar/images/cross_hover.png)
+}
+.jbar-top a.jbar-cross{
+        top:8px;
+}
+.jbar-bottom a.jbar-cross{
+        bottom:8px;
+}

@@ -1,0 +1,98 @@
+
+/************ FOR IE6 ****************/
+
+#myDialogId .myButtonClass
+{padding:2px; font-size:12px; width:50px; text-align:center; position:absolute;}
+			
+#myDialogId .ok_button
+{font: normal 0.85em Arial;  color:#000000; font: normal;  margin-left:-50px;}
+
+#myDialogId .cancel_button
+{font: normal 0.85em Arial; color:#000000;  font: normal;  margin-left:10px;  margin-top:0; position:absolute;}
+
+
+/************ FOR Mozilla ****************/
+
+html>body #myDialogId .myButtonClass
+{padding:2px; width:50px; text-align:center; position:absolute;}
+
+html>body #myDialogId .ok_button
+{font: normal 0.85em Arial;  color:#000000;  margin-left:80px;}
+
+html>body #myDialogId .cancel_button
+{font: normal 0.85em Arial; color:#000000; margin-left:150px;}
+
+
+/************ FOR Mozilla - MAP ****************/
+
+html>body #myDialogIdMap .myButtonClass
+{padding:2px; width:50px; text-align:center; position:absolute;}
+
+html>body #myDialogIdMap .ok_button
+{font: normal 0.85em Arial;  color:#000000; margin-left:-60px;}
+
+html>body #myDialogIdMap .cancel_button
+{font: normal 0.85em Arial; color:#000000;}
+
+
+/************ FOR Mozilla - Extra ****************/
+
+#aId .aClass 
+{ padding:3px; font-size:0px; width:50px; position:absolute;border:1px solid green;}
+
+#aId .ok_button 
+{background: transparent url(/wps/wcm/jsp/images/content/get_flash.gif) no-repeat 0 0;			
+	width:90px; height:35px; margin-left:-120px; cursor:pointer; border:1px solid blue;}
+
+#aId .cancel_button 
+{background: transparent url(/wps/wcm/jsp/images/content/noFlash_off.jpg) no-repeat 0 0;			
+	width:90px; height:35px; margin-left:10px;  margin-top:0; position:absolute; cursor:pointer; border:1px solid black;}
+
+html>body #aId .ok_button
+{background: transparent url(/wps/wcm/jsp/images/content/get_flash.gif) no-repeat 0 0;			
+	width:90px; height:35px; margin-left:30px; cursor:pointer;}
+
+html>body #aId .cancel_button
+{background: transparent url(/wps/wcm/jsp/images/content/noFlash_off.jpg) no-repeat 0 0;			
+	width:90px; height:35px; margin-left:180px;  margin-top:0; position:absolute; cursor:pointer;}
+
+#myDialogId1 .myButtonClass
+{padding:2px; font-size:12px; width:50px; text-align:center; position:absolute;}
+
+#myDialogId1 .ok_button
+{font: normal 0.85em Arial;  color:#12c2e9; font: normal;  margin-left:-50px;}
+
+html>body #myDialogId1 .ok_button
+{font: normal 0.85em Arial;  color:#12c2e9;  font: normal; margin-left:80px;}
+
+#myDialogId1 .cancel_button
+{font: normal 0.85em Arial; color:#12c2e9;  font: normal;  margin-left:10px;  margin-top:0; position:absolute;}
+
+html>body #myDialogId1 .cancel_button
+{font: normal 0.85em Arial; color:#12c2e9;  font: normal; margin-left:150px;  margin-top:0;}
+
+#ephox{
+padding:10px;align:justify border:1px solid red; font: normal 1.35em Arial;
+}
+
+#ephoxDialogId .ephoxButtonClass
+{padding:2px; width:50px; text-align:center; position:absolute; }
+
+#ephoxDialogId .ok_button 
+{font: normal 1.2em Arial;  color:#000000;  margin-left:-50px; }
+
+#ephoxDialogId .cancel_button 
+{font: normal 1.2em Arial; color:#000000; margin-left:10px; }
+
+html>body #ephox{
+padding:10px;align:justify border:1px solid red; font: normal 1.35em Arial;
+}
+
+html>body #ephoxDialogId .ephoxButtonClass
+{padding:2px; width:50px; text-align:center; position:absolute; }
+
+html>body #ephoxDialogId .ok_button 
+{font: normal 1.2em Arial;  color:#000000;  margin-left:100px; }
+
+html>body #ephoxDialogId .cancel_button 
+{font: normal 1.2em Arial; color:#000000; margin-left:160px; }

@@ -1,0 +1,74 @@
+.cnn_FBKcolumn1, .cnn_FBKcolumn2, .cnn_FBKcolumn3 {float:left; width:320px;}
+.cnn_FBKcolumn3 {width:300px;}
+ 
+.cnn_FBKpageT {font: bold 32px Arial,Helvetica,sans-serif;color:#ca0002;border-bottom:3px solid #036;margin-bottom:12px;}
+
+#cnn_FBKform .cnn_FBKpageT {margin-bottom: 8px;}
+#cnn_FBKtopnav {margin:28px 0 12px 0;height:23px;overflow:hidden;}
+#cnn_FBKtopnav div{float:left;display:inline;margin:0 3px 0 0;}
+
+#cnn_FBKcontent {padding:8px 18px 18px 18px;}
+* html #cnn_FBKcontent {padding: 8px 12px 18px 12px;}
+#cnn_FBKcontent form { margin:0px; }
+
+/* cross-browser hr fix */
+.cnn_FBKline1, .cnn_FBKline2{height: 0; margin: 0; padding: 0; clear: both; border: solid #eee; border-width: 2px 0 0;}
+.cnn_FBKline1{border: solid #036; border-width: 1px 0 0;}
+
+.cnn_FBKiconT { margin:24px 0 0 0;font:bold 22px/24px arial;color:#ca0002;padding:0 0 24px 52px;background:transparent url('http://i.cdn.turner.com/cnn/feedback/contact/images/icons/1NewsTipsIcon.jpg') 0px 4px no-repeat; }
+.FBK_icon2 { background-image:url('http://i.cdn.turner.com/cnn/feedback/contact/images/icons/2ErrorsIcon.jpg'); }
+.FBK_icon3 { background-image:url('http://i.cdn.turner.com/cnn/feedback/contact/images/icons/4CNNcomIcon.jpg'); }
+.FBK_icon4 { background-image:url('http://i.cdn.turner.com/cnn/feedback/contact/images/icons/5CNNTVIcon.jpg'); }
+.FBK_icon5 { background-image:url('http://i.cdn.turner.com/cnn/feedback/contact/images/icons/6HLNIcon.jpg'); }
+.FBK_icon6 { background-image:url('http://i.cdn.turner.com/cnn/feedback/contact/images/icons/7InternationalIcon.jpg'); }
+.FBK_icon7 { background-image:url('http://i.cdn.turner.com/cnn/feedback/contact/images/icons/8OtherNetworksIcon.jpg'); }
+
+.cnn_FBKbtt { padding:24px 0; color: #004276}
+.cnn_FBKclear { height:1px;overflow:hidden;clear:both; }
+
+#cnn_FBKcontent ul {margin:0px; padding: 0; list-style:none;}
+#cnn_FBKcontent ul li {color:#9a9a9a; float: left; padding:3px 10px 24px 0px; display: inline}
+#cnn_FBKcontent ul li a,
+#cnn_FBKcontent ul li a:visited{font-weight:bold; color: #004276;}
+#cnn_FBKcontent ul li span { color:#000; }
+
+#cnn_FBKcontent .cnn_FBKsubmit{position: relative; top: 6px; left: 5px}
+#cnn_FBKcontent .cnn_FBKnukemargin li{padding-bottom: 0px !important;}
+#cnn_FBKcontent .cnn_FBKgenmargin li{padding-bottom: 33px !important;}
+#cnn_FBKcontent .cnn_FBKshow{clear: left; display: block; width: 320px}
+#cnn_FBKcontent select{width:216px;margin:6px 0 0 0;}
+
+/*
+.fancyDrop{border: 1px solid;height: 20px; width: 216px; padding: 3px; position: absolute;}
+.fancyDrop ul{position: relative; width: 222px;top: 0px; left: -4px; border: 1px solid;height: 80px; background: #fff;  overflow-y: auto; overflow-x: hidden; padding-top: 0 !important}
+.fancyDrop li, .fancyDrop a{display: block; width: 222px; height: 16px; padding: 5px 0; color: #036; font-weight: bold; margin: 0 !important;}
+.fancyDrop a{padding-left: 5px;}
+.fancyDrop a:hover{color: #ca0002; background: #fdc}
+*/
+
+/* The actual feedback form */
+#cnn_FBKform{}
+#cnn_FBKform h3{font-weight: bold; font-size: 22px; margin: 0;}
+#cnn_FBKform input{width: 393px; margin: 0 0 21px 18px; display: inline; float: left;}
+#cnn_FBKform .cnn_FBKformtopinput{padding-top: 3px;}
+#cnn_FBKform .cnn_FBKinputimg{width: 50px; height: 23px; margin-left: 118px; margin-bottom: 4px;}
+#cnn_FBKform span{font-weight: bold; text-align: right; width: 100px; display: block; float: left;}
+#cnn_FBKform textarea{height: 100px; width: 750px; _width: 748px; margin: 0 0 21px 18px;}
+#cnn_FBKform .cnn_FBKformwrap{position: relative; border: 1px solid #eaeaea; zoom: 100%; padding: 18px;}
+#cnn_FBKform .cnn_FBKformwrap div{clear: left;}
+#cnn_FBKform .cnn_FBKformwrap p{margin: 10px 0 21px 0;}
+#cnn_FBKform p.errors{color: #ca0002; margin-top: 6px}
+
+.cnn_FBKsubnav{text-transform: uppercase;}
+.cnn_FBKsubnav a{font-weight: normal !important; border-right: 1px solid #004276; line-height: 12px; height: 12px; padding-right: 12px; display: block; float: left;}
+.cnn_FBKsubnav .noborder{border: none}
+
+/* Easy Corners */
+.cnn_cornerTL, .cnn_cornerTR, .cnn_cornerBL, .cnn_cornerBR{display: block; width: 17px; height: 17px; position: absolute; background-image: url(http://i.cdn.turner.com/cnn/feedback/images/cnn_FBKcorners.jpg); background-repeat: no-repeat}
+.cnn_cornerTL{background-position: top left; top: -1px; left: -1px;}
+.cnn_cornerTR{background-position: top right; top: -1px; right: -1px;}
+.cnn_cornerBL{background-position: bottom left; bottom: -1px; left: -1px}
+.cnn_cornerBR{background-position: bottom right; bottom: -1px; right: -1px}
+
+.cnn_storyarea { background-color:#fff;margin:0 5px; }
+.cnn_loadimgtxt { padding:0 0 50px 0; }

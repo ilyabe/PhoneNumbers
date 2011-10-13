@@ -1,0 +1,8 @@
+document.write('<SCRIPT language=\'JavaScript1.1\' SRC="http://ad.doubleclick.net/adj/N4848.280341.AOL/B5231691.35;sz=728x90;click=http://r1-ads.ace.advertising.com/click/site=0000755207/mnum=0001081586/cstr=29171179=_4e96342e,3060353234,755207^1081586^1183^0,1_/xsxdata=$xsxdata/bnum=29171179/optn=64?trg=;ord=3060353234?">');document.write('<\/SCRIPT>');document.write('');
+var can_adInfoTag = {};
+can_adInfoTag["3060353234"] = {
+    "CAN_ver": "0.1",
+    "CAN_ann": "Advertising.com",
+    "CAN_anl": "http://advertising.aol.com/privacy/advertisingcom/opt-out",
+    "CAN_maf": "Y"
+};

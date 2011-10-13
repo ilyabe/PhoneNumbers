@@ -1,0 +1,15 @@
+@charset "utf-8";
+a:active, a:focus { outline:none; }  
+#footer { position:relative; }
+#social-links { list-style-type:none; list-style:none; margin-right:-10px; padding:0; position:absolute; right:0; top:55px; }
+#social-links li { color:#797979; display:inline-block; font:normal 11px/30px Arial, Helvetica, sans-serif; height:30px; margin:0 0 0 4px; padding:0; width:30px; overflow:hidden; }
+* html #social-links li { display:inline; margin-right:4px; }  /* for IE 6 */
+* + html #social-links li { display:inline; margin-right:-1px; }  /* for IE 7 */
+#social-links li a { display:block; height:30px; text-decoration:none; width:30px; }
+#social-links li.text { text-align:right; width:55px; }
+#social-links li.kilmer { background:url(/wps/wcm/jsp/images/social_links/icon-kilmer-house.png) no-repeat; }
+#social-links li.btw { background:url(/wps/wcm/jsp/images/social_links/icon-jnj-btw.png) no-repeat; }
+#social-links li.facebook { background:url(/wps/wcm/jsp/images/social_links/icon-facebook.png) no-repeat; }
+#social-links li.twitter { background:url(/wps/wcm/jsp/images/social_links/icon-twitter.png) no-repeat; }
+#social-links li.youtube { background:url(/wps/wcm/jsp/images/social_links/icon-you-tube.png) no-repeat; }
+#social-links li.cut { background:url(/wps/wcm/jsp/images/social_links/jj_homepage_icon_cut.jpg) no-repeat; }

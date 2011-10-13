@@ -1,0 +1,5 @@
+ 
+document.write('<SCR'+'IPT language=\'JavaScript1.1\' SRC="http://ad.doubleclick.net/adj/mansueto.incidn/fonality;sz=728x90;pos=top;tile=10;click=http://www.burstnet.com/ads/ad22420c-map.cgi/BCPG188689.301840.502060/VTS=3ZXnc.mBIu/K=ADS_T100/SZ=728X90A/V=2.3S//REDIRURL=;ord=10252?">');
+document.write('</SCR'+'IPT>');
+ 
+var _bizo_data_partner_id = "632"; var _bizo_p = (("https:" == document.location.protocol) ? "https://sjs." : "http://js."); document.write('<scr'+'ipt src="'+_bizo_p+ 'bizographics.com/convert_data.js?partner_id='+_bizo_data_partner_id+'"></scr'+'ipt>');

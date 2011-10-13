@@ -1,0 +1,16 @@
+div#content
+{
+	width:460px;
+}
+
+table#gateway col#gatewayLeft,
+table#gateway col#gatewayRight
+{
+	width:225px;
+}
+
+.transactionmessage
+{
+	color:red !important;
+	font-weight:bold !important;
+}

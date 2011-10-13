@@ -1,0 +1,44 @@
+.dropdownpanel{float:right; height:auto; font-size:11px; font-family:Arial; font-weight:normal;}
+.languages a{float:left; padding:9px 0 0 10px;}
+.languages a:hover{float:left; text-decoration:underline; padding:9px 0 0 10px;}
+.dropdownleftpanel{width:58px; height:24px;  float:left; background:url(../images/bullets/button.png) no-repeat; margin: 5px 0 0;}
+.flagimg{float:left; width:52px; height:15px; margin:6px 0 0 7px;}
+.arrowimg{background:url(../images/bullets/arrow.gif) no-repeat; width:7px; height:14px; float:right; margin:6px 9px 0 0; cursor:pointer;}
+.dropdownrightpanel{display:none;width:auto; height:200px; float:left;  margin-right:14px; margin: 5px 0 0;}
+.select_leftbg{ width:147px;background:url(../images/bullets/dropdown_en.png) repeat-x; border:0; float:left; height:24px; color:#989897; padding:0 0 0 5px; font-size:13px; font-size:11px;margin-left:5px;}
+.select_rightbg{background:url(../images/bullets/arrowbg.png) no-repeat; width:15px; height:24px; border:0; float:left; margin-right:7px;text-align:left;}
+
+
+.ddlImg {width: auto;height: auto;}
+.ddlText {
+    cursor:pointer;
+    clear: both;
+    float: left;
+    width: 152px;
+    vertical-align: top;
+    background-color: transparent;
+    background-image: url(../images/bullets/dropdown-bg.png);
+    background-repeat: no-repeat;
+    background-position: left 6px;
+    color:#989897;
+    font-size:9px; 
+    font-weight:normal; 
+    min-height:26px;
+    margin: 0 0 0 15px;
+}
+.ddlText2 { cursor:pointer; float: right;width: 100%!important;  vertical-align: top;background: #272727  url(../images/bullets/dropdown-bg.png) repeat-x;   color:#989897;  font-size:9px;
+    font-weight:normal;}
+#effect {width: 162px;*position:none; top:30px; float:left; margin-left: 5px;}
+  
+
+.textbox {width: 164px; height: 26px;background:url(../images/bullets/dropdown_en.png) no-repeat;border:none;color:#989897; font-size:11px; font-weight:normal; clear:left; padding-right:6px;
+}
+.textarea { width:174px;height:26px;}
+.input_arrow {margin-top:11px;margin-right:0px;}
+.flagtext {float:left; padding: 6px 10px 5px 26px; text-align:left; width:auto; line-height:11px; }
+.value{ text-align:left; vertical-align:middle; /*margin-left:5px;*/}
+.imgpostion{float:left; margin-left:10px !important;}
+#flagimage{float:right;cursor:pointer;}
+#flagimage img{padding-right:15px;}
+.countryswitcher {height: 30px;}  
+#countrySwitcher{width:58px;float:right;}

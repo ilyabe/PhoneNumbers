@@ -1,0 +1,326 @@
+/*
+    ColorBox Core Style
+    The following rules are the styles that are consistant between themes.
+    Avoid changing this area to maintain compatability with future versions of ColorBox.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative; overflow:hidden;}
+#cboxLoadedContent{overflow:auto;}
+#cboxLoadedContent iframe{display:block; width:100%; height:100%; border:0;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+
+/* 
+    ColorBox user style
+*/
+
+#cboxOverlay
+{
+    background-image: url('../images/jquery/mcdcolorbox/overlay_bg.png');
+}
+#colorBox{}
+#cboxContent{}
+#cboxLoadedContent
+{
+       margin: 20px 90px;
+       padding-bottom:65px;
+       text-align:left;
+	   z-index:2;
+}
+/* Deprecated in favor of new colorbox
+.contentTypeText #cboxClose
+{
+    position:absolute; 
+    top:34px; 
+    right:99px; 
+    width:27px; 
+    height:27px; 
+    text-indent:-9999px;
+    text-align: center;
+    overflow: visible !important;
+}
+*/
+
+#innerOverlay {
+		position:absolute;
+		background:#222;
+		filter:alpha(opacity=60);
+	   -moz-opacity:0.60;
+	   -khtml-opacity: 0.60;
+	   opacity: 0.60;
+	   top:0px;
+	   left:0px;
+	   padding:30px 30px 155px 30px;
+	   z-index:-1;
+	   top:25px;
+	   left:44px;
+	   *left:58px;
+}
+
+.contentTypeText #innerOverlay {
+	   padding:30px 0;
+	   left:74px;
+	   top:38px;
+}
+
+
+ #cboxWrapper.iframe #innerOverlay {
+		position:absolute;
+		background:#222;
+		filter:alpha(opacity=60);
+	   -moz-opacity:0.60;
+	   -khtml-opacity: 0.60;
+	   opacity: 0.60;
+	   top:0px;
+	   left:0px;
+	   padding:30px;
+	   z-index:-1;
+	   top:25px;
+	   left:44px;
+	   *left:58px;
+}
+
+#cboxClose.loaded
+{
+    background:url('../images/jquery/mcdcolorbox/modalx.png') no-repeat 0px 0px; 
+}
+#cboxClose.loaded:hover 
+{
+    background:url('../images/jquery/mcdcolorbox/modalx.png') no-repeat 0px -27px; 
+}
+
+/* #cboxTitle{margin:0px 99px;position:absolute; height:40px; bottom:0px; left:10px; text-align:left; color:#fff;font-size:12px;} */
+#cboxTitle
+{
+    margin:0px 109px;
+    position:absolute; 
+    height:71px; 
+    bottom:0px; 
+    left:0px;
+    text-align:left; 
+    color:#fff;
+    font-size:11px;
+}
+#cboxCurrent{position:absolute; top:6px; left:99px; color:#fff; font-weight:bold; font-size:10px; }
+#cboxSlideshow{position:absolute; bottom:3px; right:30px; color:#0092ef;}
+
+#cboxPrevious{position:absolute; top:83px; left:0px; background:url('../images/jquery/mcdcolorbox/left_arrow.png') 0px 0px no-repeat; width:44px; height:89px; text-indent:-9999px;}
+#cboxPrevious.hover{}
+#cboxNext{position:absolute; top:83px; right:0px; background:url('../images/jquery/mcdcolorbox/right_arrow.png') 0px 0px no-repeat; width:44px; height:89px; text-indent:-9999px;}
+#cboxNext.hover{}
+
+	#cboxWrapper.contentTypeText #cboxLoadedContent
+	{
+	    padding-top: 48px;
+	    overflow: visible !important;
+	    padding-bottom:0px;
+	    /*background-image: url(../images/jquery/mcdcolorbox/callout_top.png);*/
+	    background-position: center 0px;
+	    background-repeat: no-repeat;
+	}
+	#cboxWrapper.contentTypeText #cboxLoadedContent #inner_wrapper 
+	{
+	 
+	}
+	#mcdColorboxConfirm 
+	{
+	    /*background-image: url(../images/jquery/mcdcolorbox/callout_bottom.png);
+	    background-position: center bottom;
+	    background-repeat: no-repeat;*/
+		background:#fff;
+	    padding: 10px 10px 10px 30px;
+	    width: 458px;
+		margin: 1px 0 0 15px;
+	}
+	
+	#innerWrapper.ColorBoxLegalBumper {
+		padding:0 12px;
+	}
+	#mcdColorboxConfirm #inner_wrapper 
+	{
+	    padding: 0px 12px 30px 12px;
+	}
+    #cboxLoadedContent .mcdColorboxConfirmControls
+    {
+        margin: -30px 0px 0px 34px;
+    }
+	#cboxLoadedContent .mcdColorboxConfirmControls a
+	{
+	    float: left;
+	    width: auto;
+	    height:27px;
+	    line-height: 27px;
+	    background: transparent url(../images/jquery/mcdcolorbox/generic_buttons_2.png) no-repeat 0px -54px;
+	    color: #fff;
+	    text-decoration: none;
+	    text-align: center;
+	    font-size: 14px;
+	    font-weight: 900;
+	    margin-right: 6px;
+	}
+    #cboxLoadedContent .mcdColorboxConfirmControls a:hover 
+    {
+        background: transparent url(../images/jquery/mcdcolorbox/generic_buttons_2.png) no-repeat 0px -81px;
+    }
+    #cboxLoadedContent .mcdColorboxConfirmControls a span
+    {
+        float: left;
+	    width: auto;
+	    height:27px;
+	    line-height: 27px;
+	    background: transparent url(../images/jquery/mcdcolorbox/generic_buttons_2.png) no-repeat 100% 0px;
+	    color: #fff;
+	    text-decoration: none;
+	    text-align: center;
+	    font-size: 14px;
+	    font-weight: 900;
+	    margin-left: 15px;
+	    padding-right: 15px;
+    }
+    #cboxLoadedContent .mcdColorboxConfirmControls a:hover span 
+    {
+        background: transparent url(../images/jquery/mcdcolorbox/generic_buttons_2.png) no-repeat 100% -27px;
+    }
+    #cboxLoadedContent p
+    {
+        line-height:130%;
+        padding: 0 25px;
+    }
+    #cboxLoadedContent .mcdColorboxCopyContent
+    {
+        padding: 10px 0px 53px 0px;
+    }
+
+    #cboxLoadedContent strong
+    {
+        display:block;
+        margin: 20px 25px 8px 25px;
+    }
+
+
+/*
+    The following fixes png-transparency for IE6.  
+    It is also necessary for png-transparency in IE7 & IE8 to avoid 'black halos' with the fade transition
+    
+    Since this method does not support CSS background-positioning, it is incompatible with CSS sprites.
+    Colorbox preloads navigation hover classes to account for this.
+    
+    !! Important Note: AlphaImageLoader src paths are relative to the HTML document,
+    while regular CSS background images are relative to the CSS document.
+*/
+/* .cboxIE #cboxClose.loaded{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/jquery/mcdcolorbox/modalx.png', sizingMethod='fixed');}
+*/
+.contentTypeImage .cboxIE #cboxLoadedContent
+{
+    
+    background-image:none;
+    background-color:#222;
+    /* background-image:url('/images/jquery/mcdcolorbox/ie_bodybg.gif');*/
+}
+
+.cboxIE #cboxPrevious
+{
+    background:transparent; 
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/themes/Default/images/jquery/mcdcolorbox/left_arrow.png', sizingMethod='fixed');   
+}
+
+.cboxIE #cboxNext{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/themes/Default/images/jquery/mcdcolorbox/right_arrow.png', sizingMethod='fixed');}
+
+#cboxLoadedContent  {
+ -moz-box-shadow: 0px 0px 0px #000;
+ 
+}
+
+
+
+/*
+
+    Content Type Image
+    :: All styles for ColorBox w/ Images
+    :: emcconville
+*/
+
+.contentTypeImage #cboxClose {
+    position:absolute; 
+    top:0px; 
+    right:48px; 
+    display:block; 
+    width:27px; 
+    height:27px; 
+    text-indent:-9999px;
+    text-align: center;
+    overflow: visible !important;
+}
+
+.contentTypeText #cboxClose {
+	top:12px; 
+    right:77px;
+	position:absolute;
+	display:block; 
+    width:27px; 
+    height:27px; 
+    text-indent:-9999px;
+    text-align: center;
+    overflow: visible !important;
+}
+*+html .contentTypeImage #cboxClose
+{
+    right: 33px;
+}
+.contentTypeImage #cboxLoadedContent
+{
+    min-height: 270px;
+    padding: 30px 30px 90px 30px;
+    margin: 0px 44px;
+    /*background: #222; none;*/
+    
+}
+.contentTypeImage #cboxNext
+{
+    right: 18px;
+}
+*+html .contentTypeImage #cboxPrevious 
+{
+    left: 18px;
+}
+.contentTypeImage #cboxContent
+{
+    text-align: center;
+    padding-top: 25px;
+}
+.contentTypeImage #cboxTitle
+{
+    color:#FFFFFF;
+    font-size:11px;
+    height:71px;
+    margin:0 105px 0px 73px;
+    bottom: auto;
+    text-align:left;
+    position: relative;
+    margin-top: -80px;
+}
+
+.contentTypeImage #cboxCurrent {
+    color:#FFFFFF;
+    font-size:10px;
+    font-weight:bold;
+    left:73px;
+    position:absolute;
+    top:34px;
+}
+
+/*
+    iFrame Rules
+*/
+
+.iframe #cboxLoadedContent 
+{
+    padding: 30px;
+}
+.iframe #cboxTitle 
+{
+    display: none !important;
+}

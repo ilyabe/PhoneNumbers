@@ -1,0 +1,418 @@
+/* css document */
+
+.bodygrp
+{background:url(../images/home/bg-page.gif) repeat-x left top; margin:0; padding:0;}
+
+.bodytext
+{background:none; margin:0; padding:0;}
+
+input 
+{font:normal 1em Arial; color:#555; width:200px; line-height:normal; border:1px solid #CCC; float:left; clear:left;}
+
+.input_find
+{font:normal 0.75em Arial; color:#555;  width:240px; border:1px solid #CCC; float:left; padding:3px;}
+
+html>body .input_find
+{font:normal 0.75em Arial; color:#555;  width:240px; border:1px solid #CCC; float:left; padding:3px; margin-left:10px; margin-right:10px;}
+
+.input_button
+{font:normal .85em Arial; width:75px; clear:left; float:right;}
+
+html>body .input_button
+{font:normal .85em Arial; width:75px; clear:left; float: right; margin-top:-23px; height:23px;}
+
+*+html .input_button
+{position:relative; top:23px;}
+
+select
+{font:normal 1em Arial; color:#555; width:207px; border:1px solid #CCC;}
+
+html>body select 
+{width:203px;}
+
+textarea 
+{margin:0; padding:0; font:normal 1em Arial; color:#555; width:350px; border:1px solid #CCC; height:100px;}
+
+hr
+{clear:left; margin-top:10px; height:1px; color:#CCCCCC; width:96%;}
+
+html>body hr 
+{padding-top:15px; border-top:none; border-left:none; border-right:none; border-bottom:1px solid #ccc; height:1px;}
+
+#textonly
+{margin:0 auto; padding: 0; width:990px; height:100%;}
+
+/************** Flash Header starts here ***************/
+
+#header
+{margin:0; padding:0; width:990px; height:50px;}
+
+/*
+#leadstory-flash
+{width: 990px; height: 250px; margin-top:18px;}
+*/
+
+#logo
+{color:#d80101; font:normal 1.6em arial; padding:0 0 0 20px;}
+
+html>body #logo
+{float:left; clear:left; padding: 0 0 0 19px;}
+
+#search_box_text
+{float: left; margin-top: 20px; width: 330px; height: 21px; clear:left; margin-left:10px;}
+
+/************** Primary Navigation starts here ***************/
+
+#globalnav
+{padding: 0 0 0 1.2em; margin: 0px;}
+
+#globalnav ul
+{list-style-type:none; padding:0; left: auto;}
+	
+#globalnav li
+{float:left; color:#005c70;	font:bold 14px arial; list-style:none; text-decoration:none; margin-top: 15px; text-align: center; padding: 0 1.3em 0 0;}
+	
+#globalnav a
+{padding:0; display:block; color:#005c70; text-decoration:none; }
+	
+#globalnav a:hover
+{color:#12c2e9;}
+
+/************** Text only - Navigation Starts here ***************/ 
+
+#secnav ul
+{list-style-type:none; margin-left:20px; clear:left; margin-bottom:15px;  height:100%;}
+
+html>body #secnav ul
+{margin-bottom: 0; margin-left:-20px; float:left;}
+ 
+#secnav li
+{color:#ffffff; font:bold 0.87em arial; text-decoration:none; text-align: centre; float:left; padding: 0 2em 0 0; display:block;    height:20px;}
+
+html>body #secnav li
+{padding: 0 2em 0 0;}
+	
+#secnav li a
+{color:#638e97;	text-decoration:none;}
+
+#secnav li a#active
+{color:#2dd5ff;	cursor:default;}
+	
+#secnav li a:hover
+{color:#12c2e9;}
+
+************** Text Only  - Primary Nav Starts Here ***************/
+
+#subnav_text
+{margin:0; padding:0; float:left; clear:left; margin-bottom:10px;}
+
+html>body #subnav_text
+{clear:left; padding-top:10px; margin-left:-10px;}
+
+*+html #subnav_text
+{clear:left; position:absolute; left:45px; margin-top:30px; height:2em;}
+
+#subnav_text ul
+{list-style-type:none; padding:0;}
+
+#subnav_text li
+{padding: 0 2em 0 0; float:left;  color:#ffffff; font:normal 1.12em arial; text-decoration:none; text-alignment: centre; list-style-type:none; 
+ margin-left:-10px;}
+
+#subnav_text a
+{padding:0; display:block; color:#638e97; text-decoration:none;}
+
+#subnav_text li a#active
+{color:#2dd5ff;	cursor:default;}
+	
+#subnav_text li a:hover
+{color:#12c2e9;}
+
+/************** Text Only  - site tools starts here ***************/ 
+
+#toollist_text ul
+{list-style-type: none; margin-left:20px; margin-top:15px;}
+
+html>body #toollist_text ul
+{margin-top:0; margin-left:-21px; float:left;}
+
+#toollist_text li
+{font: normal 0.8em Arial;  color:#638e97; float: left; margin: 0 .5em 0 0; 
+padding: 0 .8em 0 0; list-style-type: none;}
+
+#toollist_text li a
+{text-decoration:none;  color:#638e97;}
+
+
+/************** Secondary Navigation starts here ***************/
+
+#subnav
+{margin:0; padding:0; margin-right:45px;}
+
+#subnav ul
+{list-style-type:none; padding:0;}
+
+#subnav li
+{padding: 0; float:right; color:#ffffff; font:normal 1.1em arial;	list-style:none; text-decoration:none; text-align: center; margin-top: 40px; padding-left:58px;}
+
+#subnav a
+{padding:0;	display:block;	color:#ffffff;	text-decoration:none;}
+
+#subnav li a#active
+{color:#2dd5ff;	cursor:default;}
+	
+#subnav li a:hover
+{color:#2dd5ff;}
+
+#search_suggest_textonly
+{position: absolute; background: url(<img src="/wps/wcm/connect/265999804836e179b8f0ff8183ad03ce/search-bg.gif?MOD=AJPERES" border="0" alt="" name="" width="299" height="1"  />) repeat-y; top:65px; left: 20px; z-index:1;width=150}
+  
+/*/************** Footer navigation starts here ***************/ 
+
+#bottomnav 
+{margin:0; padding:0;}
+
+#bottomnav ul
+{list-style-type:none;	padding:0;}
+	
+#bottomnav li
+{padding: 0; float:left; color:#797979; font:normal 12px arial; list-style:none; text-decoration:none; text-align: center; margin-top:20px; padding:0 14px 10px 0;} /* border:1px solid #000099;*/
+ 
+#bottomnav a
+{padding:0;	display:block;	color:#797979;	text-decoration:none;}
+
+
+/******************* This id is for left navigation*******************/
+
+#leftnav{margin:0; padding:0; float:left; width:180px; margin-top:8px;}
+
+html>body #leftnav
+{margin-left:3px; margin-top:3px;}
+
+#leftnav ul
+{margin: 0;  list-style-type: none; font:bold 13px arial; float:left; width:180px;}
+
+#leftnav li
+{color:#638e97; text-decoration:none; padding: 10px 0 0 9px;}
+
+html>body #leftnav li
+{padding: 10px 0 0 8px;}
+
+html>body #leftnav li 
+{width:170px;}
+
+#leftnav li a#active
+{color:#12c2e9; cursor:default;}
+
+#leftnav a:hover
+{color:#12c2e9;}
+
+#leftnav ul li a
+{display: block; color: #638e97; width: 155px; padding: 0 0 0 5px; text-decoration: none;}
+
+html>body #leftnav ul ul li a
+{padding-left:11px; width:155px;}
+
+/************** Disclaimer starts here ***************/ 
+
+#footer 
+{float: left; margin-left: 10px; margin-top:22px; width:950px; border-top:1px solid #ccc; display:block;}
+
+html>body #footer 
+{margin-left: 20px;}
+
+#footer #disclaimer
+{font: normal 9px arial; color: #797979; width:650px; float:left; margin:10px 0 10px 0;}
+	
+#footer #copyright 
+{font: normal 9px arial; color:#797979; float:left; clear:left;}
+
+/************** Content starts here ***************/ 
+
+#midcontainer
+{float:left; width:410px; margin-left: 20px;}
+
+html>body #midcontainer
+{margin-left: 46px;}
+
+#pagetitle
+{font: normal 1.7em Arial; color:#12c2e9; height:45px; text-transform:capitalize;}
+
+h1
+{font: normal 1.7em Arial; color:#12c2e9; height:45px; text-transform:capitalize;} /* Use H1 instead of Pagetitle */
+
+p
+{font: normal 0.75em Arial; color:#555555; line-height:1.3; padding:5px 5px 0 0; margin:0px;}
+
+#bluetext
+{font: normal 0.75em Arial; color:#12c2e9; padding:12px 0 0 0; margin-top:-10px; text-transform:capitalize;}
+
+#pagination a
+{font:normal 1em Arial; color:#ababab; margin-top:10px; line-height:1.3; text-decoration:none;}
+
+#pagination a#current
+{text-decoration:none; cursor:default;}
+
+.bluetitle
+{font: bold 0.87em Arial; color:#0e8ba6; padding-top: 20px;}
+
+h2
+{font: bold 1em Arial; color:#0e8ba6; padding-top: 20px;} /* Use H2 instead of bluetitle */
+
+#subtitle
+{font: bold 1em Arial; color:#0e8ba6; padding:0 0 0 0; height:30px;}
+
+#line
+{background: url(../images/search/grey-line.gif) repeat-x left bottom; width:400px; margin:0 0 10px 0;}
+
+html>body #line
+{height:1px; margin-top:15px;}
+
+
+/************** Content for Tertiary Navigation starts here ***************/ 
+
+#midcontainer_ci_text
+{width:950px; margin-left: 10px; margin-top: 20px; float:left;}
+
+html>body #midcontainer_ci_text
+{width:950px; margin-left: 20px; margin-top: 20px; float:left;}
+
+html>body #midcontainer_ci
+{margin-left:46px;}
+
+#line_ci
+{background: url(../images/search/grey-line.gif) repeat-x left center; width:762px; margin:0; padding:0; height:1px;}
+
+html>body #line_ci
+{height:20px; clear:left; padding:0;}
+
+.line_ci_text
+{background: url(../images/search/grey-line.gif) repeat-x left center; width:950px; margin: 0; padding:25px 0 10px 0; margin-left:20px;}
+
+html>body .line_ci_text
+{clear:left; padding-top:40px; height: 10px;}
+
+*+html .line_ci_text
+{position:relative; top:15px; background: url(../images/search/grey-line.gif) repeat-x left center; }
+
+#breadcrumb_cont
+{width:765px; margin-left: 20px; float:left;}
+
+html>body #breadcrumb_cont
+{margin-left:47px;}
+
+#breadcrumb
+{font: normal 0.75em Arial; color:#12c2e9; float: left; margin:20px 0 0 0; padding:0;}
+
+#breadcrumb a.bc_link:link, a.bc_link:active, a.bc_link:visited
+{color:#7bb0bb; cursor:hand; text-decoration:none;}
+
+#breadcrumb a.bc_link:hover
+{text-decoration:underline;}
+
+.breadcrumb_line
+{width:765px; height:1px; border-bottom:1px solid #e5e5e5; margin:0; float:left; clear:left;}
+
+html>body .breadcrumb_line
+{margin:15px 0 0 0; width:760px;}
+
+/************** Text Only  - site tools starts here ***************/ 
+
+#toollist_text ul
+{list-style-type: none; margin-left:20px; height:20px; margin-top:-3px;}
+
+html>body #toollist_text ul
+{margin-top:0; margin-left:-21px; float:left;}
+
+*+html #toollist_text
+{margin-left:40px; height:20px;}
+
+#toollist_text li
+{font: normal 0.8em Arial;  color:#638e97; float: left; margin: 0 .5em 0 0; 
+padding: 0 .8em 0 0; list-style-type: none;}
+
+#toollist_text li a
+{text-decoration:none;  color:#638e97;}
+
+
+/************** links starts here ***************/ 
+
+
+/*************************** Contact Us *************************/
+
+.contact_us_head{background-color:#d5e2de; width:760px; height:45px; font: bold 0.8em Arial; color:#639494;}
+
+.contact_us_head span{color:#FF0000;}
+
+.contact_us_head .left{width:210px; margin-top:13px; float:left; text-align:right;}
+
+.contact_us_head .right{float:left; padding-left:20px; margin-top:10px;}
+
+.contact_us_head .send{float:left; padding-left:10px; margin-top:10px;}
+
+.contact_us_form {width:750px; font:normal .75em Arial; color:#555;}
+
+.contact_us_form span{color:#FF0000;}
+
+.contact_us_form a.cu_link:link, a.cu_link:active, a.cu_link:visited{color:#0ac4dd; text-decoration:underline; font-style:italic;}
+
+.contact_us_form a.cu_link:hover{color:#0ac4dd; text-decoration:none;}
+
+.contact_us_form .left{width:210px; margin-top:13px; float:left; text-align:right; display:block; clear:left;}
+
+.contact_us_form .right{float:left; padding-left:20px; margin-top:10px;}
+
+.radio_border{border:none; width:30px;}
+
+.btn_send{width:61px; height:21px; border:0;}
+
+.error {height:14px; padding-top:5px; padding-left:20px; font:italic 1em Arial; color:#FF0000; font-weight:bold; padding-top:10px;}
+
+#q_tool_tip {width:160px; position:absolute; z-index:3; right:40px; float:right;}
+
+#q_tool_tip .top {background:url(../images/ourproducts/q_tool_tip_top.gif) no-repeat left top; width:160px;}
+
+#q_tool_tip .top p{font:normal 1em Arial; padding:8px;}
+
+#q_tool_tip .bottom {background:url(../images/ourproducts/q_tool_tip_bottom.gif) no-repeat left top; width:160px; height:24px;}
+
+
+/***** Smart search dropdown starts here - TEXT ONLY **********/
+
+#search_textonly
+{position: relative; width: 150px; clear: left; left:20px;}
+
+html>body #search_textonly
+{position: relative; width: 150px; clear: left; left:20px;}
+
+*+html #search_suggest_textonly
+{position:relative; left:-320px; margin-top:-25px;}
+
+#search_suggest_textonly
+{position: absolute; z-index:1; width:150px; clear:left;; margin-left:-358px; margin-top:7px;}
+
+html>body #search_suggest_textonly
+{position: absolute; z-index:1; width:150px; clear:left; top:65px; margin-left:11px;}
+
+#searchtext_textonly
+{font: normal 0.7em Arial; padding:1px 10px 0 10px; color:#666666; width: 220px; top: 1px; }
+
+.expand_textonly
+{font: normal 0.7em Arial; color:#666666; width: 230px; position:relative; padding:0 0 5px 10px; left:1; top:2;}
+
+#search_header__textonly
+{background-color: #c9d7d3; color:#638e97; font: bold 0.8em Arial; float:left; padding:2px 0 0 15px; width:233px; height:20px;}
+
+#search_footer_textonly
+{background-color: #c9d7d3; width:248px; height:25px; position:relative; clear:left;}
+
+#search_viewall_textonly
+{width: 155px; height: 15px; font: bold 0.7em Arial; padding:0 0 0 15px; color:#638e97; position:relative; left:10; top:5px; cursor:hand;} 
+
+#search_viewnone_textonly
+{width: 155px; cursor:hand; font: bold 0.7em Arial; padding:5px 0 0 15px; color:#638e97; position:relative;left:6; top: 8;} 
+
+#title
+{color:#12c2e9;}
+
+
